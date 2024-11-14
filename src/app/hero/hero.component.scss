@@ -1,0 +1,83 @@
+.heroSection {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.heroBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.imageContainer {
+  position: relative;
+}
+
+.heroShadow {
+  position: absolute;
+}
+
+.heroProfilImage {
+  position: relative;
+  object-fit: cover;
+  object-position: top;
+  width: 700px;
+  height: 700px;
+  left: 47px;
+}
+
+.heroContent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heroTitle {
+  color: white;
+  display: flex;
+}
+
+.heroTitle > p {
+  transform: rotate(-90deg);
+  font-size: 64px;
+  font-weight: 400;
+  width: 200px;
+  height: auto;
+}
+
+.heroTitle .textContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.heroTitle .textContainer h1 {
+  font-weight: 700;
+  font-size: 90px;
+}
+
+.heroTitle .textContainer h2 {
+  color: #9747ff !important;
+  font-size: 58px;
+  font-weight: 400;
+}
+
+.heroContent > button {
+  color: white;
+  font-weight: 400;
+  font-size: 23px;
+  background-color: #70e61c;
+  border-radius: 10px;
+  border: none;
+  padding: 15px 30px;
+  gap: 10px;
+  margin-top: 20px;
+}

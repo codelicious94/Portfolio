@@ -1,0 +1,30 @@
+nav {
+    font-family: 'Poppins';
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 37px 100px;
+    >div {
+        font-size: 32px;
+    }
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 29px;
+    >li {
+        font-size: 21px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #70E61C;
+}
