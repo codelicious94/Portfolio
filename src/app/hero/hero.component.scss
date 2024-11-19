@@ -1,83 +1,140 @@
-.heroSection {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  overflow: hidden;
+span {
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+  text-decoration: none;
 }
 
 .heroBackground {
   position: absolute;
-  top: 0;
-  left: 0;
+  z-index: 1;
   width: 100%;
-  height: 100%;
-}
-
-.imageContainer {
-  position: relative;
+  height: 1080px;
+  top: 380px;
 }
 
 .heroShadow {
   position: absolute;
+  z-index: 0;
 }
 
 .heroProfilImage {
-  position: relative;
+  position: absolute;
   object-fit: cover;
   object-position: top;
   width: 700px;
   height: 700px;
   left: 47px;
+  clip-path: inset(0px 0px 45px 0px round 0px 0px 100px 0px);
+}
+
+.heroContentContainer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 297px;
+  right: 100px;
+}
+
+.sideText {
+  transform: rotate(-90deg);
+  font-size: 64px;
+  font-weight: 400;
+  color: white;
+  position: absolute;
+  left: -120px;
 }
 
 .heroContent {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 20px;
 }
 
 .heroTitle {
   color: white;
-  display: flex;
 }
 
-.heroTitle > p {
-  transform: rotate(-90deg);
-  font-size: 64px;
-  font-weight: 400;
-  width: 200px;
-  height: auto;
-}
-
-.heroTitle .textContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.heroTitle .textContainer h1 {
-  font-weight: 700;
+.textContainer h1 {
   font-size: 90px;
+  line-height: 1;
+  margin-bottom: 10px;
 }
 
-.heroTitle .textContainer h2 {
+.textContainer h2 {
   color: #9747ff !important;
   font-size: 58px;
   font-weight: 400;
+  line-height: 1;
 }
 
-.heroContent > button {
+.heroButton {
+  position: absolute;
+  z-index: 2;
+  top: 200px;
   color: white;
   font-weight: 400;
-  font-size: 23px;
+  font-size: 24px;
   background-color: #70e61c;
   border-radius: 10px;
   border: none;
   padding: 15px 30px;
+  cursor: pointer;
+  transition: ease-out 300ms;
+}
+
+.heroButton:hover {
+  background-color: #9747ff;
+  transform: scale(1.2);
+}
+
+.heroSocialMediaContainer {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  top: 850px;
+  gap: 32px;
+  > a {
+    cursor: pointer;
+  }
+}
+
+.socialBar {
+  width: 100px;
+  height: 4px;
+  background-color: #9747ff;
+}
+
+.heroSocialMediaLinks {
+  width: 30px;
+  height: 30px;
+  transform-origin: left;
+  &:hover {
+    transform: scale(1.3);
+  }
+}
+
+.scrollDownContainer {
+  color: white;
+  position: absolute;
+  z-index: 2;
+  right: 100px;
+  top: 850px;
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  align-items: center;
+  transform: rotate(90deg);
+  transform-origin: right center;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 27.6px;
   gap: 10px;
-  margin-top: 20px;
+  > img {
+    transform: rotate(-90deg);
+  }
 }
