@@ -1,0 +1,54 @@
+section {
+    display: flex;
+    align-items: center;
+    > img {
+        position: absolute;
+        top: 1100px;
+        right: 400px;
+        z-index: 2;
+        width: 440px;
+        height: 440px;
+        border: 2px solid;
+        border-radius: 50%;
+        border-color: #70E61C;
+    } 
+}
+
+.aboutMeContent {
+    position: absolute;
+    top: 1100px;
+    left: 100px;
+    color: white;
+    z-index: 2;
+    width: 480px;
+    height: 540px;
+    > h1 {
+        font-size: 90px;
+        font-weight: 700;
+        line-height: 108px;
+    }
+}
+
+.aboutMeDescription {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 32px;
+    > div {
+        display: flex;
+    }
+}
+
+.aboutMeDescriptionImages {
+    height: 48px;
+    width: 48px;
+    margin-right: 12px;
+}
+
+.aboutMeBar {
+    width: 400px;
+    height: 4px;
+    background-color: #70E61C;
+    margin-top: 1180px;
+    margin-left: 1600px;
+}

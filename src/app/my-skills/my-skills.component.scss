@@ -1,0 +1,50 @@
+section {
+    position: absolute;
+    top: 1780px;
+    left: 100px;
+    height: 404px;
+    width: 1340px;
+}
+
+.framesContainer {
+    position: absolute;
+    width: 664px;
+    height: 404px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 88px;
+    top: 12px;
+    > img {
+        width: 88px;
+        height: 101px;
+    }
+}
+
+.mySkillsContainer {
+    position: absolute;
+    color: white;
+    margin-left: 869px;
+}
+
+.mySkillsButton {
+    position: absolute;
+    z-index: 2;
+    top: 200px;
+    color: white;
+    font-weight: 400;
+    font-size: 24px;
+    background-color: #70e61c;
+    border-radius: 10px;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: ease-out 100ms;
+    transform-origin: top right;
+  }
+  
+  .mySkillsButton:hover {
+    background-color: #9747ff;
+    transform: scale(1.1);
+  }
