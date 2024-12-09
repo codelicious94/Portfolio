@@ -1,22 +1,23 @@
 section {
     display: flex;
     align-items: center;
-    > img {
-        position: absolute;
-        top: 1100px;
-        right: 400px;
-        z-index: 2;
-        width: 440px;
-        height: 440px;
-        border: 2px solid;
-        border-radius: 50%;
-        border-color: #70E61C;
-    } 
+}
+
+.aboutMePicture {
+    position: absolute;
+    top: 1100px;
+    right: 500px;
+    z-index: 3;
+    width: 460px;
+    height: 460px;
+    border: 2px solid;
+    border-radius: 50%;
+    border-color: #70E61C;
 }
 
 .aboutMeContent {
     position: absolute;
-    top: 1100px;
+    top: 1000px;
     left: 100px;
     color: white;
     z-index: 2;
@@ -46,9 +47,19 @@ section {
 }
 
 .aboutMeBar {
-    width: 400px;
+    position: absolute;
+    top: 160px;
+    right: 0;
+    width: 500px;
     height: 4px;
     background-color: #70E61C;
     margin-top: 1180px;
-    margin-left: 1600px;
+    z-index: 2;
+}
+
+.aboutMeBackground {
+    position: absolute;
+    top: 750px;
+    right: 0;
+    z-index: 1;
 }
