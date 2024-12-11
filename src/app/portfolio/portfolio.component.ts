@@ -2,12 +2,12 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-my-skills',
+  selector: 'app-portfolio',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './my-skills.component.html',
-  styleUrl: './my-skills.component.scss'
+  templateUrl: './portfolio.component.html',
+  styleUrl: './portfolio.component.scss'
 })
-export class MySkillsComponent {
+export class PortfolioComponent {
 
 }

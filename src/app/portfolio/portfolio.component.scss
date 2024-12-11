@@ -1,0 +1,100 @@
+section {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 2380px;
+    width: 100%;
+    scroll-margin-top: 120px;
+    > p {
+        color: white;
+    }
+}
+
+.portfolioTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    > h1 {
+        font-size: 90px;
+        color: white;
+        padding: 32px;
+    }
+}
+
+.portfolioBarLeft {
+    position: absolute;
+    width: 180px;
+    margin-right: 650px;
+    height: 4px;
+    background-color: #9747ff;
+    z-index: 2;
+}
+
+.portfolioBarRight {
+    position: absolute;
+    right: 0;
+    width: 700px;
+    height: 4px;
+    background-color: #9747ff;
+    z-index: 2;
+}
+
+.portfolioProjectsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+.portfolioProjectsContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+    width: 520px;
+    gap: 15px;
+    > h2 {
+        color: #9747ff;
+        font-size: 32px;
+    }
+    > p {
+        color: #70E61C;
+        font-size: 24px;
+    }
+}
+
+.portfolioProjectsButtons {
+    display: flex;
+    gap: 80px;
+    margin-top: 20px;
+}
+
+.portfolioProjectsButtonViolett {
+    cursor: pointer;
+    background-color: #9747ff;
+    border-radius: 10px;
+    border: none;
+    padding: 15px 30px;
+    color: white;
+    font-size: 24px;
+    &:hover {
+        background-color: #70E61C;
+    }
+}
+
+.portfolioProjectsButtonGreen {
+    cursor: pointer;
+    border: solid 1px #70E61C;
+    background-color: #141D2F;
+    border-radius: 10px;
+    padding: 15px 30px;
+    color: white;
+    font-size: 24px;
+    &:hover {
+        background-color: #70E61C;
+    }
+}

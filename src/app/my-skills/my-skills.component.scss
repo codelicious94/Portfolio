@@ -1,13 +1,11 @@
 section {
-    position: absolute;
-    top: 1780px;
-    left: 100px;
-    height: 404px;
-    width: 1340px;
+    scroll-margin-top: 120px;
 }
 
 .framesContainer {
     position: absolute;
+    top: 1780px;
+    left: 100px;
     width: 664px;
     height: 404px;
     display: flex;
@@ -15,7 +13,6 @@ section {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 88px;
-    top: 12px;
 }
 
 .frame {
@@ -27,7 +24,7 @@ section {
     font-size: 16px;
     font-weight: 700;
     gap: 10px;
-
+    z-index: 150;
     > img {
         height: 60px;
         cursor: pointer;
@@ -35,6 +32,16 @@ section {
         &:hover {
             animation: moveUpAndDown 1.5s forwards;
         }
+    }
+}
+
+.frameContinuallyLearning {
+    height: 119px;
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    &:hover {
+        filter: brightness(0) invert(1);
+        transform: scale(1.01) translate(-2px, 2px);
     }
 }
 
@@ -50,17 +57,49 @@ section {
     }
 }
 
-
 .mySkillsContainer {
     position: absolute;
+    top: 1780px;    
+    height: 404px;
     color: white;
-    margin-left: 869px;
+    right: 100px;
+}
+
+.mySkillsTitle {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    > h1 {
+        font-size: 90px;
+    }
+}
+
+.mySkillsBar {
+    position: absolute;
+    right: -100px !important;
+    width: 80px;
+    height: 4px;
+    background-color: #9747ff;
+    z-index: 2;
+}
+
+.mySkillsContent {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 24px;
+    > h2 {
+        font-size: 32px;
+        span {
+            color: #9747ff;
+        }
+    }
 }
 
 .mySkillsButton {
     position: absolute;
-    z-index: 2;
-    top: 200px;
+    top: 320px;
+    right: 140px;
     color: white;
     font-weight: 400;
     font-size: 24px;
@@ -72,7 +111,7 @@ section {
     transition: ease-out 100ms;
     transform-origin: top right;
     &:hover {
-    background-color: #9747ff;
-    transform: scale(1.1);
+        background-color: #9747ff;
+        transform: scale(1.1);
     }
 }
