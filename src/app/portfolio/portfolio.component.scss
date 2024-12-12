@@ -7,6 +7,7 @@ section {
     top: 2380px;
     width: 100%;
     scroll-margin-top: 120px;
+    overflow-x: hidden;
     > p {
         color: white;
     }
@@ -47,6 +48,7 @@ section {
     justify-content: center;
     align-items: center;
     gap: 35px;
+    z-index: 5;
 }
 
 .portfolioProjectsContent {
@@ -97,4 +99,11 @@ section {
     &:hover {
         background-color: #70E61C;
     }
+}
+
+.portfolioBackground {
+    position: absolute;
+    top: 1200px;
+    left: -220px;
+    z-index: 1;
 }
