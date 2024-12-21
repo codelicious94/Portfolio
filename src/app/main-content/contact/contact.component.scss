@@ -126,6 +126,10 @@ textarea.error {
     border: solid 1px red;
 }
 
+.contactInput.valid {
+    border: 1px solid #70e61c;
+}
+
 .inputWrapper {
     position: relative;
     display: flex;
@@ -161,6 +165,7 @@ textarea.error {
 .contactPrivacyPolicyContainer {
     display: flex;
     justify-content: flex-start;
+    align-items: center;
     gap: 4px;
     > button {
         cursor: pointer;
@@ -174,5 +179,31 @@ textarea.error {
         text-decoration: none;
         font-weight: 400;
         color: #9747FF;
+        font-size: 14px;
     }
+    > p {
+        font-size: 14px;
+    }
+}
+
+.privacyPolicyImage {
+    cursor: pointer;
+    margin-right: 8px; 
+    vertical-align: middle;
+}
+
+.submitButton:disabled {
+    background-color: #cccccc; 
+    cursor: not-allowed; 
+    transform: none;
+}
+
+.submitButton:disabled:hover {
+    background-color: #cccccc; 
+    transform: none; 
+}
+
+.submitButton:not(:disabled):hover {
+    background-color: #9747ff; 
+    transform: scale(1.1); 
 }

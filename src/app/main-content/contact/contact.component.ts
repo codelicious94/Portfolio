@@ -12,6 +12,8 @@ import { FormsModule, NgForm } from '@angular/forms';
 })
 export class ContactComponent {
 
+  privacyPolicyChecked = false;
+
   http = inject(HttpClient);
 
   contactData = {
@@ -50,5 +52,9 @@ export class ContactComponent {
 
       ngForm.resetForm();
     }
+  }
+
+  togglePrivacyPolicy() {
+    this.privacyPolicyChecked = !this.privacyPolicyChecked;
   }
 }

@@ -10,9 +10,10 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
-  activeLink: string = 'about-me'; 
+  activeLink: string = '';
 
   setActive(link: string) {
     this.activeLink = link;
   }
+  
 }

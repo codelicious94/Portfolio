@@ -24,11 +24,18 @@
                         name="name" 
                         placeholder="Your name" 
                         required 
-                        [class.error]="!name.valid && name.touched && !name.disabled">
-                        <img 
-                        *ngIf="!name.valid && name.touched && !name.disabled" 
-                        src="../../../assets/img/symbols/contactInput.png" 
-                        alt="input icon" 
+                        minlength="3"
+                        [class.error]="!name.valid && name.touched && !name.disabled"
+                        [class.valid]="name.valid && name.touched">
+                    <img 
+                        *ngIf="!name.valid && name.touched" 
+                        src="../../../assets/img/symbols/contactInputError.png" 
+                        alt="input error icon" 
+                        class="inputIcon">
+                    <img 
+                        *ngIf="name.valid && name.touched" 
+                        src="../../../assets/img/symbols/contactInputCheck.png" 
+                        alt="input check icon" 
                         class="inputIcon">
                 </div>
                 <span *ngIf="!name.valid && name.touched && !name.disabled" class="error-message">
@@ -47,11 +54,18 @@
                         name="email" 
                         placeholder="Your email" 
                         required 
-                        [class.error]="!email.valid && email.touched && !email.disabled">
+                        email
+                        [class.error]="!email.valid && email.touched && !email.disabled"
+                        [class.valid]="email.valid && email.touched">
                     <img 
-                        *ngIf="!email.valid && email.touched && !email.disabled" 
-                        src="../../../assets/img/symbols/contactInput.png" 
-                        alt="input icon" 
+                        *ngIf="!email.valid && email.touched" 
+                        src="../../../assets/img/symbols/contactInputError.png" 
+                        alt="input error icon" 
+                        class="inputIcon">
+                    <img 
+                        *ngIf="email.valid && email.touched" 
+                        src="../../../assets/img/symbols/contactInputCheck.png" 
+                        alt="input check icon" 
                         class="inputIcon">
                 </div>
                 <span *ngIf="!email.valid && email.touched && !email.disabled" class="error-message">
@@ -64,19 +78,26 @@
             <div class="contactMessageContainer">
                 <div class="inputWrapper">
                     <textarea 
+                        class="contactInput"
                         #message="ngModel" 
                         [(ngModel)]="contactData.message" 
                         id="message" 
                         name="message" 
                         placeholder="Your message..." 
-                        minlength="4" 
+                        minlength="3" 
                         required 
-                        [class.error]="!message.valid && message.touched && !message.disabled">
+                        [class.error]="!message.valid && message.touched && !message.disabled"
+                        [class.valid]="message.valid && message.touched">
                     </textarea>
                     <img 
-                        *ngIf="!message.valid && message.touched && !message.disabled" 
-                        src="../../../assets/img/symbols/contactInput.png" 
-                        alt="input icon" 
+                        *ngIf="!message.valid && message.touched" 
+                        src="../../../assets/img/symbols/contactInputError.png" 
+                        alt="textarea error icon" 
+                        class="inputIcon">
+                    <img 
+                        *ngIf="message.valid && message.touched" 
+                        src="../../../assets/img/symbols/contactInputCheck.png" 
+                        alt="textarea check icon" 
                         class="inputIcon">
                 </div>
                 <span *ngIf="!message.valid && message.touched && !message.disabled" class="error-message">
@@ -86,11 +107,34 @@
             
 
             <div class="contactPrivacyPolicyContainer">
-                <button></button><p>I've read the</p><a href="privacy-policy">privacy policy</a><p>and agree to the processing of my data as outlined</p>
+                <img 
+                    *ngIf="!privacyPolicyChecked" 
+                    src="../../../assets/img/symbols/check_privacy_policy.png" 
+                    alt="empty checkbox" 
+                    (click)="togglePrivacyPolicy()" 
+                    class="privacyPolicyImage"
+                >
+                <img 
+                    *ngIf="privacyPolicyChecked" 
+                    src="../../../assets/img/symbols/check_box.png" 
+                    alt="checked checkbox" 
+                    (click)="togglePrivacyPolicy()" 
+                    class="privacyPolicyImage"
+                >
+                <p>I've read the</p>
+                <a href="privacy-policy">privacy policy</a>
+                <p>and agree to the processing of my data as outlined</p>
             </div>
+            
+            
 
-            <button type="submit" value="Submit">Send message :)</button>
-
+            <button 
+                type="submit" 
+                [disabled]="!contactForm.form.valid || !privacyPolicyChecked" 
+                class="submitButton">
+                Send message :)
+            </button>
+        
         </form>
 
         <a href="#hero">
