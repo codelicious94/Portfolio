@@ -1,0 +1,48 @@
+section {
+    margin: 100px;
+    color: white;
+    gap: 12px;
+}
+
+h1 {
+    font-size: 90px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+ul {
+    margin: 0;       
+    padding: 0;    
+}
+
+li {
+    list-style: none; 
+    margin-left: 0;   
+}
+
+a {
+    text-decoration: none;
+    color: #9747ff;
+    &:hover {
+        color: #70e61c;
+    }
+}
+
+.legalNoticeContainer {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.arrowLeft {
+    position: absolute; 
+    top: 100px;
+    right: 100px; 
+    transform: rotate(270deg);
+    width: 32px;
+    height: auto; 
+    cursor: pointer; 
+}

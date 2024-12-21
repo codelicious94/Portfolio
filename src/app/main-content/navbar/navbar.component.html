@@ -1,0 +1,28 @@
+<nav>
+    <div>
+      <a href="#hero">
+        <img src="../../assets/img/logo/Logo_Header_Matter_Simon.png" alt="Logo">
+      </a>
+    </div>
+    <ul>
+      <li 
+        [class.active]="activeLink === 'aboutMe'" 
+        (click)="setActive('aboutMe')">
+        <a href="#aboutMe">About me</a>
+        <p class="navMenuBar"></p>
+      </li>
+      <li 
+        [class.active]="activeLink === 'mySkills'" 
+        (click)="setActive('mySkills')">
+        <a href="#mySkills">Skills</a>
+        <p class="navMenuBar"></p>
+      </li>
+      <li 
+        [class.active]="activeLink === 'portfolio'" 
+        (click)="setActive('portfolio')">
+        <a href="#portfolio">Portfolio</a>
+        <p class="navMenuBar"></p>
+      </li>
+    </ul>
+  </nav>
+  
