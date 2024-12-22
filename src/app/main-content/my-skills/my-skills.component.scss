@@ -105,6 +105,7 @@
 .mySkillsContent {
     display: flex;
     align-items: flex-end;
+    justify-content: flex-end;
     flex-direction: column;
     gap: 24px;
     > h2 {
@@ -117,8 +118,8 @@
 
 .mySkillsButton {
     position: absolute;
-    top: 320px;
-    right: 140px;
+    align-self: flex-end;
+    right: 0;
     color: white;
     font-weight: 400;
     font-size: 24px;

@@ -2,16 +2,18 @@ import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule, CommonModule],
+  imports: [FormsModule, CommonModule, RouterModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
 
+  mailTest = true;
   privacyPolicyChecked = false;
 
   http = inject(HttpClient);
@@ -22,10 +24,8 @@ export class ContactComponent {
     message: ""
   }
 
-  mailTest = true;
-
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'https://www.simonmatter.ch/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
