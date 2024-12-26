@@ -1,7 +1,12 @@
+.mySkills {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    height: 100vh;
+}
+
 .framesContainer {
-    position: absolute;
-    top: 1780px;
-    left: 100px;
+    position: relative;
     width: 664px;
     height: 404px;
     display: flex;
@@ -77,8 +82,7 @@
 }
 
 .mySkillsContainer {
-    position: absolute;
-    top: 1780px;    
+    position: relative;
     height: 404px;
     color: white;
     right: 100px;

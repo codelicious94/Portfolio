@@ -11,9 +11,20 @@ import { CommonModule } from '@angular/common';
 })
 export class NavbarComponent {
   activeLink: string = '';
+  isMenuOpen: boolean = false;
 
   setActive(link: string) {
     this.activeLink = link;
+    this.closeMenu(); 
   }
-  
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+    document.body.style.overflow = this.isMenuOpen ? 'hidden' : 'auto'; 
+  }
+
+  closeMenu() {
+    this.isMenuOpen = false;
+    document.body.style.overflow = 'auto'; 
+  }
 }

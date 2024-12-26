@@ -11,6 +11,8 @@ nav {
   padding: 37px 100px;
   z-index: 999;
   background-color: #141d2f;
+  height: 80px;
+
   > div {
     font-size: 32px;
   }
@@ -21,6 +23,7 @@ ul {
   justify-content: center;
   list-style-type: none;
   gap: 29px;
+
   > li {
     font-size: 24px;
   }
@@ -65,4 +68,62 @@ li.active .navMenuBar {
 li:hover .navMenuBar,
 li > a:hover + .navMenuBar {
   opacity: 1;
+}
+
+.burgerMenu {
+  display: none;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+
+.closeMenu {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .burgerMenu {
+    display: block;
+  }
+
+  ul {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #141d2f;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  ul.menu-open {
+    display: flex;
+  }
+
+  .closeMenu {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 36px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    padding: 37px 50px;
+  }
+
+  .portfolioLogo {
+    height: 48px;
+  }
 }

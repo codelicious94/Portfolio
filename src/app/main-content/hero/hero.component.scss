@@ -1,6 +1,22 @@
 .heroSection {
-  margin-top: 160px;
-  scroll-margin-top: 160px;
+  position: relative;
+  padding-top: 120px; 
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+.backgroundContainer {
+  position: absolute;
+  top: 0;
+  padding-left: 80px;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../../assets/img/background/Hero_Background.png');
+  background-size: cover;
+  background-position: right 200px;
+  background-repeat: no-repeat;
+  background-attachment: local;
+  z-index: 2; 
 }
 
 span {
@@ -10,36 +26,40 @@ span {
   text-decoration: none;
 }
 
-.heroBackground {
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  height: 1080px;
-  top: 380px;
+.heroImageContainer {
+  position: relative;
+  margin-left: 100px; 
 }
 
 .heroShadow {
   position: absolute;
-  z-index: 0;
+  width: 800px;
+  height: 800px;
+  top: 24px;
+  z-index: 0; 
 }
 
 .heroProfilImage {
-  position: absolute;
+  position: relative;
   object-fit: cover;
   object-position: top;
   width: 700px;
   height: 700px;
-  left: 47px;
-  clip-path: inset(0px 0px 45px 0px round 0px 0px 100px 0px);
+  margin-left: 24px;
+  z-index: 1;
 }
+
 
 .heroContentContainer {
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  gap: 32px;
   top: 297px;
   right: 100px;
+  z-index: 10;
 }
 
 .sideText {
@@ -49,6 +69,7 @@ span {
   color: white;
   position: absolute;
   left: -120px;
+  top: 34px;
 }
 
 .heroContent {
@@ -77,10 +98,8 @@ span {
 }
 
 .heroButton {
-  position: absolute;
-  z-index: 2;
-  top: 500px;
-  left: 1400px;
+  position: relative;
+  z-index: 3;
   color: white;
   font-weight: 400;
   font-size: 24px;
@@ -99,7 +118,7 @@ span {
 
 .heroSocialMediaContainer {
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   display: flex;
   text-align: center;
   align-items: center;
@@ -128,7 +147,7 @@ span {
 .scrollDownContainer {
   color: white;
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   right: 100px;
   top: 850px;
   display: flex;
@@ -141,5 +160,168 @@ span {
   gap: 10px;
   > img {
     transform: rotate(-90deg);
+  }
+}
+
+@media screen and (max-width: 1900px) {
+  .backgroundContainer {
+    background-position: right 240px;
+  }
+}
+
+
+@media screen and (max-width: 1700px) {
+  .backgroundContainer {
+    background-position: right 280px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .backgroundContainer {
+    background-position: right 340px;
+    padding-left: 80px;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .backgroundContainer {
+    background-position: right 360px;
+  }
+
+  .heroImageContainer {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .backgroundContainer {
+    background-position: center 275px;
+    padding-right: 400px;
+    left: -0px;
+  }
+
+  .heroImageContainer {
+    margin: 0;
+  }
+
+  .heroSection {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .heroContentContainer {
+    position: relative;
+    top: 0; 
+    right: 0; 
+    margin-top: 120px;
+    margin-bottom: 64px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .heroSocialMediaContainer {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    position: relative;
+    top: 0; 
+    right: 0;
+    margin-top: 32px; 
+    > span {
+      display: none
+    }
+  }
+
+  .scrollDownContainer, .heroEmail {
+    display: none;
+  }
+
+  .socialBar {
+    position: absolute;
+    right: 220px;
+    height: 4px;
+    background-color: #9747ff;
+    width: 100vw;
+  }
+
+  .heroSection {
+    height: 1300px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .textContainer h1 {
+    font-size: 64px;
+  }
+  
+  .textContainer h2 {
+    font-size: 48px;
+  }
+
+  .sideText {
+    font-size: 48px;
+    top: 28px;
+    left: -100px; 
+
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .heroProfilImage {
+    height: 560px;
+    width: 560px;
+  }
+
+  .heroShadow {
+    height: 600px;
+    width: 600px;
+  }
+
+  .backgroundContainer {
+    background-position: center 160px; 
+    padding-right: 400px; 
+    left: -100px; 
+  }
+
+  .heroContentContainer {
+    left: 24px;
+    right: 24px;
+  }
+
+  .textContainer h1 {
+    font-size: 48px;
+  }
+  
+  .textContainer h2 {
+    font-size: 32px;
+  }
+
+  .sideText {
+    font-size: 36px;
+    top: 20px;
+    left: -72px; 
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .heroButton {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .textContainer h1 {
+    font-size: 40px;
+  }
+  
+  .textContainer h2 {
+    font-size: 28px;
+  }
+
+  .sideText {
+    font-size: 30px;
+    top: 16px;
+    left: -64px; 
   }
 }
