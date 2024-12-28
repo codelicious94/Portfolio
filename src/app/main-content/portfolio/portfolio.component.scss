@@ -1,11 +1,9 @@
-section {
-    position: absolute;
+.portfolio {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    top: 2380px;
-    width: 100%;
     overflow-x: hidden;
     > p {
         color: white;
@@ -17,6 +15,7 @@ section {
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin-left: 380px;
     > h1 {
         font-size: 90px;
         color: white;
@@ -25,18 +24,14 @@ section {
 }
 
 .portfolioBarLeft {
-    position: absolute;
-    width: 180px;
-    margin-right: 650px;
+    width: 120px;
     height: 4px;
     background-color: #9747ff;
     z-index: 2;
 }
 
 .portfolioBarRight {
-    position: absolute;
-    right: 0;
-    width: 700px;
+    flex: 1;
     height: 4px;
     background-color: #9747ff;
     z-index: 2;
@@ -50,6 +45,10 @@ section {
     z-index: 5;
 }
 
+.portfolioProjectsContainer.reverse {
+    flex-direction: row-reverse;
+}
+
 .portfolioProjectsContent {
     display: flex;
     flex-direction: column;
@@ -58,14 +57,16 @@ section {
     color: white;
     width: 520px;
     gap: 15px;
-    > h2 {
-        color: #9747ff;
-        font-size: 32px;
-    }
-    > p {
-        color: #70E61C;
-        font-size: 24px;
-    }
+}
+
+.portfolioProjectsContent > h2 {
+    color: #9747ff;
+    font-size: 32px;
+}
+
+.portfolioProjectsContent > p {
+    color: #70E61C;
+    font-size: 24px;
 }
 
 .portfolioProjectsButtons {
@@ -105,4 +106,66 @@ section {
     top: 1200px;
     left: -220px;
     z-index: 1;
+}
+
+@media screen and (max-width: 1200px) {
+    .portfolioProjectsContainer {
+        flex-direction: column;
+        gap: 0;
+        text-align: center;
+    }
+
+    .portfolioProjectsContainer.reverse {
+        flex-direction: column;
+    }
+
+    .portfolioProjectsContent {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .portfolioTitle {
+        margin-left: 120px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .portfolioTitle {
+        margin-left: 80px;
+    }
+
+    .portfolioBarLeft {
+        width: 60px;
+    }
+
+    p {
+        margin: 0 32px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .portfolioTitle {
+        margin-left: 64px;
+        > h1 {
+            font-size: 64px;
+            margin: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .portfolioTitle {
+        > h1 {
+            font-size: 48px;
+            padding: 36px 12px;
+        }
+    }
+
+
+
+    .portfolioBarLeft {
+        width: 40px;
+    }
 }

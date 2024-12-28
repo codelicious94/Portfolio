@@ -1,6 +1,7 @@
 .mySkills {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-left: 100px;
     height: 100vh;
 }
@@ -106,6 +107,11 @@
     z-index: 2;
 }
 
+.mySkillsTitleContent {
+    margin: 24px 0;
+    text-align: end;
+}
+
 .mySkillsContent {
     display: flex;
     align-items: flex-end;
@@ -121,9 +127,7 @@
 }
 
 .mySkillsButton {
-    position: absolute;
-    align-self: flex-end;
-    right: 0;
+    position: relative;
     color: white;
     font-weight: 400;
     font-size: 24px;
@@ -144,5 +148,132 @@
     position: absolute;
     top: 1980px;
     left: -40px;
-    z-index: 1;
+    z-index: -1;
+}
+
+@media screen and (max-width: 1500px) {
+    .mySkillsContent, .mySkillsTitleContent {
+        width: 480px;
+        text-align: end;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .mySkillsBackground {
+        top: 2400px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .mySkills {
+        height: 1300px;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .mySkillsContent {
+        padding-top: 620px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .framesContainer {
+        top: -600px;
+    }
+
+    .mySkillsBackground {
+        top: 2500px;
+    }
+
+    .mySkillsBar {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .framesContainer {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .framesContainer {
+        top: 0;
+        margin-left: 32px;
+        margin-right: 12px;
+        gap: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .frame {
+        > img {
+            height: 44px;
+        }
+        > p {
+            font-size: 14px;
+        }
+    }
+
+    .mainFrame, .hoverFrame {
+        height: 100px;
+    }
+
+    .mySkillsContainer {
+        height: 300px;
+    }
+
+    .mySkills {
+        margin-left: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .mySkillsContent {
+        padding-top: 600px;
+        margin-left: 100px;
+        width: 100%;
+    }
+
+    .mySkillsBackground {
+        top: 2300px;
+    }
+
+    .mySkillsContainer, .mySkillsTitleContent {
+        width: 100%;
+        margin-left: 64px;
+    }
+
+    .mySkillsTitleContent, .mySkillsContent {
+        > p {
+            margin: 0 64px;
+        }
+
+        > h2 {
+            font-size: 24px;
+            margin-right: 12px;
+        }
+    }
+
+    .mySkillsTitle {
+        > h1{
+            font-size: 64px;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .mySkillsButton {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .mySkillsTitle {
+        > h1{
+            font-size: 48px;
+        }
+    }
 }
