@@ -9,21 +9,21 @@
       [class.active]="activeLink === 'aboutMe'"
       (click)="setActive('aboutMe')"
     >
-      <a href="#aboutMe">About me</a>
+      <a href="javascript:void(0)" (click)="scrollToPosition(800)">About me</a>
       <p class="navMenuBar"></p>
     </li>
     <li
       [class.active]="activeLink === 'mySkills'"
       (click)="setActive('mySkills')"
     >
-      <a href="#mySkills">Skills</a>
+      <a href="javascript:void(0)" (click)="scrollToPosition(1700)">Skills</a>
       <p class="navMenuBar"></p>
     </li>
     <li
       [class.active]="activeLink === 'portfolio'"
       (click)="setActive('portfolio')"
     >
-      <a href="#portfolio">Portfolio</a>
+      <a href="javascript:void(0)" (click)="scrollToPosition(2500)">Portfolio</a>
       <p class="navMenuBar"></p>
     </li>
   </ul>

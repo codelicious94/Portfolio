@@ -1,5 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { ViewportScroller } from '@angular/common';
+
 
 @Component({
   selector: 'app-privacy-policy',
@@ -9,5 +11,9 @@ import { Component } from '@angular/core';
   styleUrl: './privacy-policy.component.scss'
 })
 export class PrivacyPolicyComponent {
+  constructor(private viewportScroller: ViewportScroller) { }
 
+  ngOnInit(): void {
+    this.viewportScroller.scrollToPosition([0, 0]);
+  }
 }

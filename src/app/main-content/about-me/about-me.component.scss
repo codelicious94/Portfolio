@@ -61,7 +61,7 @@
     position: absolute;
     top: 850px;
     right: 0;
-    z-index: 3;
+    z-index: 1;
 }
 
 @media screen and (max-width: 1600px) {
@@ -108,7 +108,7 @@
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .aboutMeDescription {
         > h1 {
             font-size: 48px;
