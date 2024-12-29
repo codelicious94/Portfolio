@@ -2,7 +2,6 @@
   position: relative;
   overflow-x: hidden;
   height: 100vh;
-  margin-top: -180px;
 }
 
 span {
@@ -213,7 +212,7 @@ span {
     position: relative;
     top: 0; 
     right: 0; 
-    margin-top: 120px;
+    margin-top: 64px;
     margin-bottom: 64px;
     display: flex;
     align-items: center;
@@ -251,6 +250,10 @@ span {
   .backgroundContainer {
     background-position: center 145px;
   }
+
+  .heroContentContainer {
+    margin-top: 32px;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -272,7 +275,10 @@ span {
     font-size: 48px;
     top: 28px;
     left: -100px; 
+  }
 
+  .heroContentContainer {
+    margin-top: 0;
   }
 }
 
@@ -284,7 +290,7 @@ span {
 
 @media screen and (max-width: 650px) {
   .heroSection {
-    height: 1200px;
+    height: 1100px;
   }
 
   .heroImageContainer {
@@ -327,6 +333,10 @@ span {
 }
 
 @media screen and (max-width: 450px) {
+  .heroSection {
+    height: 950px;
+  }
+
   .heroImageContainer {
     margin-top: 180px;
   }

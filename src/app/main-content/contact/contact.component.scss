@@ -1,4 +1,4 @@
-section {
+.contactSection {
     position: relative;
     display: flex;
     justify-content: center;
@@ -18,22 +18,24 @@ p {
 }
 
 .contactTitle {
+    position: relative;
     display: flex;
-    justify-content: center;
     align-items: center;
+    width: 100%;
+    margin: 32px 0;
     > h1 {
         font-size: 90px;
-        margin-bottom: 32px;
+        z-index: 2;
     }
 }
 
 .contactBar {
-    position: absolute;
-    width: 700px;
-    left: 0;
+    flex: 1;
     height: 4px;
     background-color: #9747ff;
-    z-index: 2;
+    left: 0;
+    margin-right: 24px;
+    max-width: 700px;
 }
 
 .contactContent {
@@ -53,7 +55,7 @@ p {
 .arrowUp {
     position: absolute;
     right: 100px;
-    bottom: 0;
+    bottom: 32px;
     cursor: pointer;
     width: 40px;
 }
@@ -66,11 +68,9 @@ form {
     width: 50%;
     height: 600px;
     gap: 32px;
-    margin-bottom: 80px;
     > button {
         cursor: pointer;
         font-size: 24px;
-        width: 280px;
         padding: 15px 30px;
         border: none;
         border-radius: 10px;
@@ -205,4 +205,88 @@ textarea.error {
 .submitButton:not(:disabled):hover {
     background-color: #9747ff; 
     transform: scale(1.1); 
+}
+
+@media screen and (max-width: 1200px) {
+    .contactTitle {
+        margin-right: 100px;
+    }
+
+    .contactContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        > div {
+            margin-left: 0;
+        }
+    }
+
+    form {
+        width: 100%;
+        justify-content: center;
+        height: auto;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    .contactTitle {
+        > h1 {
+            font-size: 64px;
+        }
+    }
+
+    .contactInput, .inputWrapper {
+        width: 340px;
+    }
+
+    .contactPrivacyPolicyContainer {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        padding: 0 32px; 
+        box-sizing: border-box; 
+    
+        > img.privacyPolicyImage {
+            cursor: pointer;
+            margin-right: 8px; 
+            vertical-align: middle;
+        }
+    
+        > p {
+            font-size: 14px;
+            margin: 0; 
+        }
+    
+        > a {
+            text-decoration: none;
+            font-weight: 400;
+            color: #9747FF;
+            font-size: 14px;
+        }
+    }
+
+    .arrowUp {
+        right: 32px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    form {
+        >button {
+            font-size: 16px;
+            padding: 10px 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .contactTitle {
+        > h1 {
+            font-size: 48px;
+        }
+    }
 }

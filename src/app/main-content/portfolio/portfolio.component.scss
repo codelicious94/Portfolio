@@ -1,4 +1,4 @@
-.portfolio {
+.portfolioSection {
     position: relative;
     display: flex;
     justify-content: center;
@@ -105,8 +105,10 @@
     position: absolute;
     top: 1200px;
     left: -220px;
-    z-index: 1;
+    z-index: 0;
+    filter: blur(86px);
 }
+
 
 @media screen and (max-width: 1200px) {
     .portfolioProjectsContainer {
@@ -143,6 +145,13 @@
         margin: 0 32px;
         text-align: center;
     }
+
+    .portfolioBackground {
+        height: 600px;
+        left: 100px;
+        top: 1100px;
+        rotate: 172deg;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -153,6 +162,26 @@
             margin: 0;
         }
     }
+
+    .portfolioProjectsContainer {
+        > img {
+            height: 320px;
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .portfolioProjectsContent {
+        width: 100%;
+        >span {
+            margin: 0 32px;
+        }
+    }
+
+    .portfolioProjectsButtonViolett, .portfolioProjectsButtonGreen {
+        font-size: 16px;
+        padding: 10px 20px;
+    }   
 }
 
 @media screen and (max-width: 450px) {
@@ -162,8 +191,6 @@
             padding: 36px 12px;
         }
     }
-
-
 
     .portfolioBarLeft {
         width: 40px;

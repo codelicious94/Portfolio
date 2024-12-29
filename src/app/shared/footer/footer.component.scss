@@ -1,14 +1,11 @@
 footer {
     position: relative;
-    left: 0;
-    right: 0;
-    font-family: 'Poppins';
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 37px 100px;
-    z-index: 999;
+    z-index: 10;
     background-color: #141D2F;
     border-top: solid 4px;
     border-color: #70E61C;
@@ -49,4 +46,19 @@ a:hover .footerBar {
     &:hover {
       transform: scale(1.2);
     }
-  }
+}
+
+@media screen and (max-width: 800px) {
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 12px;
+    }
+
+    .footerBar {
+        width: calc(100% - 60%);
+        margin: 0 30%;
+    }
+}
