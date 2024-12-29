@@ -9,5 +9,10 @@ import { Component } from '@angular/core';
   styleUrl: './my-skills.component.scss'
 })
 export class MySkillsComponent {
-
+  scrollToPosition(positionY: number) {
+    window.scrollTo({
+      top: positionY,
+      behavior: 'smooth' 
+    });
+  }
 }

@@ -9,5 +9,10 @@ import { Component } from '@angular/core';
   styleUrl: './hero.component.scss'
 })
 export class HeroComponent {
-
+  scrollToPosition(positionY: number) {
+    window.scrollTo({
+      top: positionY,
+      behavior: 'smooth' 
+    });
+  }
 }

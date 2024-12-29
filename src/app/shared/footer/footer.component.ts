@@ -10,5 +10,10 @@ import { RouterModule } from '@angular/router';
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
-
+  scrollToPosition(positionY: number) {
+    window.scrollTo({
+      top: positionY,
+      behavior: 'smooth' 
+    });
+  }
 }
