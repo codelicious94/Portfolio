@@ -46,3 +46,29 @@ a {
     height: auto; 
     cursor: pointer; 
 }
+
+@media screen and (max-width: 600px) {
+    section {
+        margin: 64px;
+    }
+
+    .arrowLeft {
+        right: 64px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    .arrowLeft {
+        top: 48px;
+        right: 32px;
+        width: 24px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}
