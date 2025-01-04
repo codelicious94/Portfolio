@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-
 @Component({
   selector: 'app-navbar',
   standalone: true,
@@ -30,51 +29,76 @@ export class NavbarComponent {
 
   scrollToPosition(positionY: number) {
     const screenWidth = window.innerWidth;
-    let adjustedPosition = positionY;
-  
-    if (screenWidth >= 1200 && screenWidth < 1350) {
-      if (positionY === 800) {
-        adjustedPosition = 1200; 
-      } else if (positionY === 1700) {
-        adjustedPosition = 2100; 
-      } else if (positionY === 2500) {
-        adjustedPosition = 2900; 
-      }
-    }
-
-    else if (screenWidth < 1200 && screenWidth > 650) {
-      if (positionY === 800) {
-        adjustedPosition = 1200; 
-      } else if (positionY === 1700) {
-        adjustedPosition = 2000; 
-      } else if (positionY === 2500) {
-        adjustedPosition = 3300;
-      }
-    }
-
-    else if (screenWidth <= 650 && screenWidth > 450) {
-      if (positionY === 800) {
-        adjustedPosition = 1000; 
-      } else if (positionY === 1700) {
-        adjustedPosition = 1700; 
-      } else if (positionY === 2500) {
-        adjustedPosition = 3100; 
-      }
-    }
-
-    else if (screenWidth <= 450) {
-      if (positionY === 800) {
-        adjustedPosition = 750; 
-      } else if (positionY === 1700) {
-        adjustedPosition = 1600; 
-      } else if (positionY === 2500) {
-        adjustedPosition = 2950; 
-      }
-    }
+    const adjustedPosition = this.getAdjustedPosition(screenWidth, positionY);
   
     window.scrollTo({
       top: adjustedPosition,
       behavior: 'smooth'
     });
+  }
+  
+  getAdjustedPosition(screenWidth: number, positionY: number): number {
+    if (screenWidth >= 1200 && screenWidth < 1350) {
+      return this.getPositionForLargeScreens(positionY);
+    } else if (screenWidth < 1200 && screenWidth > 650) {
+      return this.getPositionForMediumScreens(positionY);
+    } else if (screenWidth <= 650 && screenWidth > 450) {
+      return this.getPositionForSmallScreens(positionY);
+    } else if (screenWidth <= 450) {
+      return this.getPositionForExtraSmallScreens(positionY);
+    }
+    return positionY; 
+  }
+  
+  getPositionForLargeScreens(positionY: number): number {
+    switch (positionY) {
+      case 800:
+        return 1200;
+      case 1700:
+        return 2100;
+      case 2500:
+        return 2900;
+      default:
+        return positionY;
+    }
+  }
+  
+  getPositionForMediumScreens(positionY: number): number {
+    switch (positionY) {
+      case 800:
+        return 1200;
+      case 1700:
+        return 2000;
+      case 2500:
+        return 3300;
+      default:
+        return positionY;
+    }
+  }
+  
+  getPositionForSmallScreens(positionY: number): number {
+    switch (positionY) {
+      case 800:
+        return 1000;
+      case 1700:
+        return 1700;
+      case 2500:
+        return 3100;
+      default:
+        return positionY;
+    }
+  }
+  
+  getPositionForExtraSmallScreens(positionY: number): number {
+    switch (positionY) {
+      case 800:
+        return 750;
+      case 1700:
+        return 1600;
+      case 2500:
+        return 2950;
+      default:
+        return positionY;
+    }
   }
 }
