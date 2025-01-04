@@ -15,6 +15,7 @@ export class ContactComponent {
 
   mailTest = true;
   privacyPolicyChecked = false;
+  emailSent = false;
 
   http = inject(HttpClient);
 
@@ -40,7 +41,7 @@ export class ContactComponent {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-
+            this.emailSent = true; // Erfolgsmeldung aktivieren
             ngForm.resetForm();
           },
           error: (error) => {
@@ -49,7 +50,7 @@ export class ContactComponent {
           complete: () => console.info('send post complete'),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-
+      this.emailSent = true; // Erfolgsmeldung aktivieren
       ngForm.resetForm();
     }
   }

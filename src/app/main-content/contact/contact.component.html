@@ -126,14 +126,16 @@
                 <p>and agree to the processing of my data as outlined</p>
             </div>
             
-            
-
             <button 
                 type="submit" 
                 [disabled]="!contactForm.form.valid || !privacyPolicyChecked" 
                 class="submitButton">
-                Send message :)
+                Send message
             </button>
+
+            <div *ngIf="emailSent" class="successMessage">
+                Your email has been sent successfully!
+              </div>
         
         </form>
 
