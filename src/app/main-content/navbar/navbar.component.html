@@ -4,29 +4,41 @@
       <img class="portfolioLogo" src="../../assets/img/logo/Logo_Header_Matter_Simon.png" alt="Logo">
     </a>
   </div>
-  <ul [ngClass]="{'menu-open': isMenuOpen}">
-    <li
-      [class.active]="activeLink === 'aboutMe'"
-      (click)="setActive('aboutMe')"
-    >
-      <a href="javascript:void(0)" (click)="scrollToPosition(800)">About me</a>
+
+  <div class="menuContainer" [ngClass]="{'menu-open': isMenuOpen}">
+    <ul>
+      <li
+        [class.active]="activeLink === 'aboutMe'"
+        (click)="setActive('aboutMe')"
+      >
+      <a href="#aboutMe" (click)="navigateToSection($event)">About me</a>
       <p class="navMenuBar"></p>
-    </li>
-    <li
-      [class.active]="activeLink === 'mySkills'"
-      (click)="setActive('mySkills')"
-    >
-      <a href="javascript:void(0)" (click)="scrollToPosition(1700)">Skills</a>
+      </li>
+      <li
+        [class.active]="activeLink === 'mySkills'"
+        (click)="setActive('mySkills')"
+      >
+      <a href="#mySkills" (click)="navigateToSection($event)">Skills</a>
       <p class="navMenuBar"></p>
-    </li>
-    <li
-      [class.active]="activeLink === 'portfolio'"
-      (click)="setActive('portfolio')"
-    >
-      <a href="javascript:void(0)" (click)="scrollToPosition(2500)">Portfolio</a>
+      </li>
+      <li
+        [class.active]="activeLink === 'portfolio'"
+        (click)="setActive('portfolio')"
+      >
+      <a href="#portfolio" (click)="navigateToSection($event)">Portfolio</a>
       <p class="navMenuBar"></p>
-    </li>
-  </ul>
+      </li>
+    </ul>
+
+    <div class="languageContainer">
+      <div>
+        <img class="languageLogos" src="../../../assets/img/symbols/england.png" alt="English">
+      </div>
+      <div>
+        <img class="languageLogos" src="../../../assets/img/symbols/german.png" alt="German">
+      </div>
+    </div>
+  </div>
 
   <img
     class="burgerMenu"

@@ -8,14 +8,32 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 37px 100px;
   z-index: 999;
   background-color: #141d2f;
-  height: 80px;
-
   > div {
     font-size: 32px;
   }
+}
+
+.menuContainer {
+  display: flex;
+  align-items: center;
+}
+
+.languageContainer {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin: 0 100px;
+}
+
+.languageLogos {
+  height: 32px;
+}
+
+.languageLogos:hover {
+  cursor: pointer;
+  scale: 1.1;
 }
 
 ul {
@@ -23,10 +41,13 @@ ul {
   justify-content: center;
   list-style-type: none;
   gap: 29px;
-
   > li {
     font-size: 24px;
   }
+}
+
+.portfolioLogo {
+  margin: 37px 100px;
 }
 
 a {
@@ -81,16 +102,17 @@ li > a:hover + .navMenuBar {
   display: none;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .burgerMenu {
     display: block;
+    margin-right: 100px;
   }
 
-  ul {
+  .menuContainer {
     display: none;
     position: fixed;
     top: 0;
-    left: -40px;
+    left: 0;
     width: 100vw;
     height: 100vh;
     background-color: #141d2f;
@@ -98,10 +120,29 @@ li > a:hover + .navMenuBar {
     justify-content: center;
     align-items: center;
     z-index: 1000;
+    gap: 32px;
   }
 
-  ul.menu-open {
+  .menuContainer.menu-open {
     display: flex;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .languageContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
   }
 
   .closeMenu {
@@ -119,10 +160,6 @@ li > a:hover + .navMenuBar {
 }
 
 @media screen and (max-width: 600px) {
-  nav {
-    padding: 37px 50px;
-  }
-
   .portfolioLogo {
     height: 48px;
   }

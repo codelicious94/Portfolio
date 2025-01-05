@@ -1,9 +1,9 @@
 .aboutMeSection {
     display: flex;
     align-items: center;
-    height: 100vh;
-    margin-top: -80px;
-    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 100px 0;
+    scroll-margin-top: 100px;
 }
 
 .aboutMeContent {
@@ -38,8 +38,8 @@
 }
 
 .aboutMePicture {
-    position: relative;
-    left: 400px;
+    position: absolute;
+    right: 300px;
     z-index: 3;
     width: 460px;
     height: 460px;
@@ -49,31 +49,27 @@
 }
 
 .aboutMeBar {
-    position: relative;
-    right: -324px;
+    position: absolute;
     width: 500px;
     height: 4px;
+    right: 0;
     background-color: #70E61C;
     z-index: 2;
 }
 
 .aboutMeBackground {
-    position: absolute;
-    top: 850px;
-    right: 0;
-    z-index: 1;
+    display: none;
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (min-width: 2000px) {
     .aboutMePicture {
-        left: 200px;
+        display: none;
     }
 
     .aboutMeBar {
-        right: -100px;
+        display: none;
     }
 }
-
 
 @media screen and (max-width: 1350px) {
     .aboutMePicture, .aboutMeBar {
