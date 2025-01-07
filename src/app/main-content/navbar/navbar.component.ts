@@ -27,14 +27,19 @@ export class NavbarComponent {
     document.body.style.overflow = 'auto'; 
   }
 
-  navigateToSection(event: Event) {
-    event.preventDefault(); 
-    const target = (event.target as HTMLAnchorElement).getAttribute('href');
-    if (target) {
-      const section = document.querySelector(target);
-      if (section) {
-        section.scrollIntoView({ behavior: 'smooth' });
+  navigateToSection(destination: string): void {
+    if (destination) {
+      const target = document.querySelector(destination);
+      if (target) {
+        const yOffset = -150;
+        const yPosition = target.getBoundingClientRect().top + window.scrollY + yOffset;
+        window.scrollTo({
+          top: yPosition,
+          behavior: 'smooth'
+        });
+      } else {
+        console.error(`Target not found: ${destination}`);
       }
     }
-  }  
+  }
 }

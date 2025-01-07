@@ -7,29 +7,20 @@
 
   <div class="menuContainer" [ngClass]="{'menu-open': isMenuOpen}">
     <ul>
-      <li
-        [class.active]="activeLink === 'aboutMe'"
-        (click)="setActive('aboutMe')"
-      >
-      <a href="#aboutMe" (click)="navigateToSection($event)">About me</a>
-      <p class="navMenuBar"></p>
+      <li [class.active]="activeLink === 'aboutMe'">
+        <a href="#aboutMe" (click)="navigateToSection('#aboutMe'); setActive('aboutMe'); $event.preventDefault()">About me</a>
+        <p class="navMenuBar"></p>
       </li>
-      <li
-        [class.active]="activeLink === 'mySkills'"
-        (click)="setActive('mySkills')"
-      >
-      <a href="#mySkills" (click)="navigateToSection($event)">Skills</a>
-      <p class="navMenuBar"></p>
+      <li [class.active]="activeLink === 'mySkills'">
+        <a href="#mySkills" (click)="navigateToSection('#mySkills'); setActive('mySkills'); $event.preventDefault()">Skills</a>
+        <p class="navMenuBar"></p>
       </li>
-      <li
-        [class.active]="activeLink === 'portfolio'"
-        (click)="setActive('portfolio')"
-      >
-      <a href="#portfolio" (click)="navigateToSection($event)">Portfolio</a>
-      <p class="navMenuBar"></p>
+      <li [class.active]="activeLink === 'portfolio'">
+        <a href="#portfolio" (click)="navigateToSection('#portfolio'); setActive('portfolio'); $event.preventDefault()">Portfolio</a>
+        <p class="navMenuBar"></p>
       </li>
     </ul>
-
+  
     <div class="languageContainer">
       <div>
         <img class="languageLogos" src="../../../assets/img/symbols/england.png" alt="English">
