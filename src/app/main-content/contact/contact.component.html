@@ -29,12 +29,12 @@
                         [class.valid]="name.valid && name.touched">
                     <img 
                         *ngIf="!name.valid && name.touched" 
-                        src="../../../assets/img/symbols/contactInputError.png" 
+                        src="assets/img/symbols/contactInputError.png" 
                         alt="input error icon" 
                         class="inputIcon">
                     <img 
                         *ngIf="name.valid && name.touched" 
-                        src="../../../assets/img/symbols/contactInputCheck.png" 
+                        src="assets/img/symbols/contactInputCheck.png" 
                         alt="input check icon" 
                         class="inputIcon">
                 </div>
@@ -59,12 +59,12 @@
                         [class.valid]="email.valid && email.touched">
                     <img 
                         *ngIf="!email.valid && email.touched" 
-                        src="../../../assets/img/symbols/contactInputError.png" 
+                        src="assets/img/symbols/contactInputError.png" 
                         alt="input error icon" 
                         class="inputIcon">
                     <img 
                         *ngIf="email.valid && email.touched" 
-                        src="../../../assets/img/symbols/contactInputCheck.png" 
+                        src="assets/img/symbols/contactInputCheck.png" 
                         alt="input check icon" 
                         class="inputIcon">
                 </div>
@@ -91,12 +91,12 @@
                     </textarea>
                     <img 
                         *ngIf="!message.valid && message.touched" 
-                        src="../../../assets/img/symbols/contactInputError.png" 
+                        src="assets/img/symbols/contactInputError.png" 
                         alt="textarea error icon" 
                         class="inputIcon">
                     <img 
                         *ngIf="message.valid && message.touched" 
-                        src="../../../assets/img/symbols/contactInputCheck.png" 
+                        src="assets/img/symbols/contactInputCheck.png" 
                         alt="textarea check icon" 
                         class="inputIcon">
                 </div>
@@ -109,14 +109,14 @@
             <div class="contactPrivacyPolicyContainer">
                 <img 
                     *ngIf="!privacyPolicyChecked" 
-                    src="../../../assets/img/symbols/check_privacy_policy.png" 
+                    src="assets/img/symbols/check_privacy_policy.png" 
                     alt="empty checkbox" 
                     (click)="togglePrivacyPolicy()" 
                     class="privacyPolicyImage"
                 >
                 <img 
                     *ngIf="privacyPolicyChecked" 
-                    src="../../../assets/img/symbols/check_box.png" 
+                    src="assets/img/symbols/check_box.png" 
                     alt="checked checkbox" 
                     (click)="togglePrivacyPolicy()" 
                     class="privacyPolicyImage"
@@ -140,7 +140,7 @@
         </form>
 
         <a href="#hero">
-            <img class="arrowUp" src="../../assets/img/symbols/button_contact.png">
+            <img class="arrowUp" src="assets/img/symbols/button_contact.png">
         </a>
 
     </div>
