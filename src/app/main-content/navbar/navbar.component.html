@@ -8,25 +8,31 @@
   <div class="menuContainer" [ngClass]="{'menu-open': isMenuOpen}">
     <ul>
       <li [class.active]="activeLink === 'aboutMe'">
-        <a href="#aboutMe" (click)="navigateToSection('#aboutMe'); setActive('aboutMe'); $event.preventDefault()">About me</a>
+        <a href="#aboutMe" (click)="navigateToSection('#aboutMe'); setActive('aboutMe'); $event.preventDefault()">
+          {{ 'navbar.aboutMe' | translate }}
+        </a>
         <p class="navMenuBar"></p>
       </li>
       <li [class.active]="activeLink === 'mySkills'">
-        <a href="#mySkills" (click)="navigateToSection('#mySkills'); setActive('mySkills'); $event.preventDefault()">Skills</a>
+        <a href="#mySkills" (click)="navigateToSection('#mySkills'); setActive('mySkills'); $event.preventDefault()">
+          {{ 'navbar.skills' | translate }}
+        </a>
         <p class="navMenuBar"></p>
       </li>
       <li [class.active]="activeLink === 'portfolio'">
-        <a href="#portfolio" (click)="navigateToSection('#portfolio'); setActive('portfolio'); $event.preventDefault()">Portfolio</a>
+        <a href="#portfolio" (click)="navigateToSection('#portfolio'); setActive('portfolio'); $event.preventDefault()">
+          {{ 'navbar.portfolio' | translate }}
+        </a>
         <p class="navMenuBar"></p>
       </li>
     </ul>
-  
+
     <div class="languageContainer">
       <div>
-        <img class="languageLogos" src="../../../assets/img/symbols/england.png" alt="English">
+        <img class="languageLogos" src="../../../assets/img/symbols/england.png" alt="English" (click)="switchLanguage('en')">
       </div>
       <div>
-        <img class="languageLogos" src="../../../assets/img/symbols/german.png" alt="German">
+        <img class="languageLogos" src="../../../assets/img/symbols/german.png" alt="German" (click)="switchLanguage('de')">
       </div>
     </div>
   </div>

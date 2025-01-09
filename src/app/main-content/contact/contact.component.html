@@ -7,9 +7,9 @@
     
     <div class="contactContent">
         <div>
-            <h2>Got a problem to solve?</h2>
-            <p>Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.</p>
-            <p>Need a Frontend developer? <b>Contact me!</b></p>
+            <h2>{{ 'contact.subtitle' | translate }}</h2>
+            <p>{{ 'contact.description' | translate }}</p>
+            <p>{{ 'contact.cta' | translate }} <span><b>{{ 'contact.ctabold' | translate }}</b></span></p>
         </div>
         <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
 
@@ -22,7 +22,7 @@
                         type="text" 
                         id="name" 
                         name="name" 
-                        placeholder="Your name" 
+                        placeholder="{{ 'contact.form.name.placeholder' | translate }}" 
                         required 
                         minlength="3"
                         [class.error]="!name.valid && name.touched && !name.disabled"
@@ -39,7 +39,7 @@
                         class="inputIcon">
                 </div>
                 <span *ngIf="!name.valid && name.touched && !name.disabled" class="error-message">
-                    Your name is required
+                    {{ 'contact.form.error' | translate }}
                 </span>
             </div>
             
@@ -52,7 +52,7 @@
                         type="email" 
                         id="email" 
                         name="email" 
-                        placeholder="Your email" 
+                        placeholder="{{ 'contact.form.email.placeholder' | translate }}" 
                         required 
                         email
                         [class.error]="!email.valid && email.touched && !email.disabled"
@@ -69,7 +69,7 @@
                         class="inputIcon">
                 </div>
                 <span *ngIf="!email.valid && email.touched && !email.disabled" class="error-message">
-                    Your email is required
+                    {{ 'contact.form.email.error' | translate }}
                 </span>
             </div>
             
@@ -83,7 +83,7 @@
                         [(ngModel)]="contactData.message" 
                         id="message" 
                         name="message" 
-                        placeholder="Your message..." 
+                        placeholder="{{ 'contact.form.message.placeholder' | translate }}" 
                         minlength="3" 
                         required 
                         [class.error]="!message.valid && message.touched && !message.disabled"
@@ -101,7 +101,7 @@
                         class="inputIcon">
                 </div>
                 <span *ngIf="!message.valid && message.touched && !message.disabled" class="error-message">
-                    Your message is empty
+                    {{ 'contact.form.message.error' | translate }}
                 </span>
             </div>
             
@@ -121,20 +121,20 @@
                     (click)="togglePrivacyPolicy()" 
                     class="privacyPolicyImage"
                 >
-                <p>I've read the</p>
-                <a [routerLink]="'/privacy-policy'">privacy policy</a>
-                <p>and agree to the processing of my data as outlined</p>
+                <p>{{ 'contact.form.privacyPolicy.text' | translate }}</p>
+                <a [routerLink]="'/privacy-policy'">{{ 'contact.form.privacyPolicy.link' | translate }}</a>
+                <p>{{ 'contact.form.privacyPolicy.confirmation' | translate }}</p>
             </div>
             
             <button 
                 type="submit" 
                 [disabled]="!contactForm.form.valid || !privacyPolicyChecked" 
                 class="submitButton">
-                Send message
+                {{ 'contact.form.button' | translate }}
             </button>
 
             <div *ngIf="emailSent" class="successMessage">
-                Your email has been sent successfully!
+                {{ 'contact.form.successMessage' | translate }}
               </div>
         
         </form>

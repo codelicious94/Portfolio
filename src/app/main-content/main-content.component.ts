@@ -6,6 +6,8 @@ import { MySkillsComponent } from './my-skills/my-skills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { TranslateModule } from '@ngx-translate/core';
+
 
 @Component({
   selector: 'app-main-content',
@@ -17,7 +19,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     AboutMeComponent,
     MySkillsComponent,
     PortfolioComponent,
-    ContactComponent
+    ContactComponent,
+    TranslateModule
   ],
   templateUrl: './main-content.component.html',
   styleUrl: './main-content.component.scss'

@@ -1,0 +1,102 @@
+{
+    "navbar": {
+      "aboutMe": "Über mich",
+      "skills": "Fähigkeiten",
+      "portfolio": "Portfolio"
+    },
+    "hero": {
+      "sideText": "Ich bin",
+      "name": "Simon Matter",
+      "title": "SOFTWAREENTWICKLER",
+      "cta": "Kontaktiere mich",
+      "scrollDown": "runterscrollen"
+    },
+    "aboutMe": {
+      "title": "Über mich",
+      "description": "Hallo, ich bin ein deutschsprachiger Frontend-Entwickler aus der Nähe von Zürich. Angetrieben von den unbegrenzten Möglichkeiten in der IT bin ich begeistert davon, visuell ansprechende und intuitive Webseiten und Anwendungen zu erstellen.",
+      "location": "Flexibel in Bezug auf Arbeitsumgebungen kann ich sowohl vor Ort in München als auch remote effektiv arbeiten.",
+      "mindset": "Ich bin aufgeschlossen und immer auf der Suche nach persönlichen Herausforderungen, um mein Wissen und meine Fähigkeiten ständig zu verbessern.",
+      "approach": "In meinem Beruf geht es beim Programmieren nicht nur um das Schreiben von Code; es ist eine kreative Form der Problemlösung. Ich bin stolz darauf, komplexe technische Herausforderungen in einfache, benutzerfreundliche Lösungen zu übersetzen. So helfe ich Ihnen, Ihre Ziele zu erreichen und Ihre Visionen zu verwirklichen."
+    },
+    "mySkills": {
+      "title": "Meine Fähigkeiten",
+      "description": "Ich habe Erfahrung in der Erstellung von Projekten mit verschiedenen Frontend-Technologien und Konzepten gesammelt.",
+      "cta": {
+        "title": "Suchen Sie eine",
+        "titletext": "andere Fähigkeit?",
+        "text": "Kontaktieren Sie mich gerne. Ich freue mich darauf, mein bisheriges Wissen zu erweitern.",
+        "button": "Kontakt aufnehmen"
+      }
+    },
+    "portfolio": {
+      "title": "Portfolio",
+      "description": "Entdecken Sie hier eine Auswahl meiner Arbeit - Interagieren Sie mit Projekten, um meine Fähigkeiten in Aktion zu sehen.",
+      "projects": {
+        "join": {
+          "name": "Join",
+          "tech": "Angular | Typescript | HTML | CSS | Firebase",
+          "description": "Task Manager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
+          "cta": {
+            "liveTest": "Live-Demo",
+            "github": "GitHub"
+          }
+        },
+        "elPolloLoco": {
+          "name": "El Pollo Loco",
+          "tech": "Javascript | HTML | CSS",
+          "description": "Ein einfaches Jump-and-Run-Spiel basierend auf einem objektorientierten Ansatz. Helfen Sie Pepe, Münzen und Salsa-Flaschen zu finden, um gegen die hungrigen Hühner zu kämpfen.",
+          "cta": {
+            "liveTest": "Live-Demo",
+            "github": "GitHub"
+          }
+        },
+        "pokedex": {
+          "name": "Pokedex",
+          "tech": "Javascript | HTML | CSS | API",
+          "description": "Basierend auf der PokéAPI, eine einfache Bibliothek, die Pokemon-Informationen bereitstellt und katalogisiert.",
+          "cta": {
+            "liveTest": "Live-Demo",
+            "github": "GitHub"
+          }
+        },
+        "simonWorldTour": {
+          "name": "Simons Weltreise",
+          "tech": "Javascript | HTML | CSS",
+          "description": "Eine einfache Fotogalerie von meiner eigenen Weltreise von 2023 bis 2024.",
+          "cta": {
+            "liveTest": "Live-Demo",
+            "github": "GitHub"
+          }
+        }
+      }
+    },
+    "contact": {
+      "title": "Kontakt",
+      "subtitle": "Haben Sie ein Problem zu lösen?",
+      "description": "Kontaktieren Sie mich über dieses Formular. Ich bin daran interessiert, von Ihnen zu hören, Ihre Ideen zu kennen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
+      "cta": "Brauchen Sie einen Frontend-Entwickler?",
+      "ctabold": "Kontaktieren Sie mich!",
+      "form": {
+        "name": {
+          "placeholder": "Ihr Name",
+          "error": "Ihr Name ist erforderlich"
+        },
+        "email": {
+          "placeholder": "Ihre E-Mail",
+          "error": "Ihre E-Mail ist erforderlich"
+        },
+        "message": {
+          "placeholder": "Ihre Nachricht...",
+          "error": "Ihre Nachricht ist leer"
+        },
+        "privacyPolicy": {
+          "text": "Ich habe die",
+          "link": "Datenschutzerklärung",
+          "confirmation": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu"
+        },
+        "successMessage": "Ihre E-Mail wurde erfolgreich gesendet!",
+        "button": "Nachricht senden"
+      }
+    }
+  }
+  

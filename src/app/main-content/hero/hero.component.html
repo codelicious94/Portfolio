@@ -8,20 +8,21 @@
 
     <div class="heroContentContainer">
 
-        <p class="sideText">I am</p>
+        <p class="sideText">{{ 'hero.sideText' | translate }}</p>
 
         <div class="heroContent">
             <div class="heroTitle">
                 <div class="textContainer">
                     <h1>Simon Matter</h1>
-                    <h2>FRONTEND DEVELOPER</h2>
+                    <h2>{{ 'hero.title' | translate }}</h2>
                 </div>
             </div>
         </div>
 
         <div>
-            <a href="javascript:void(0)" (click)="scrollToPosition(5000)"><button class="heroButton">Let's talk</button></a>
-        </div>
+            <a href="#contact" (click)="navigateToSection('#contact'); $event.preventDefault();">
+                <button class="heroButton">{{ 'hero.cta' | translate }}</button>
+            </a>        </div>
     </div>
 
     
@@ -30,17 +31,17 @@
         <a class="heroSocialMediaLinks" href="https://github.com/codelicious94">
             <img src="../../assets/img/socialmedia/github.png">
         </a>
-        <a class="heroSocialMediaLinks" href="javascript:void(0)" (click)="scrollToPosition(5000)">
+        <a class="heroSocialMediaLinks" href="#contact" (click)="navigateToSection('#contact'); $event.preventDefault();">
             <img src="../../assets/img/socialmedia/mail.png">
         </a>
         <a class="heroSocialMediaLinks" href="https://www.linkedin.com/in/simon-matter-63a935209/">
             <img src="../../assets/img/socialmedia/linkedin.png">
         </a>
-        <a href="javascript:void(0)" (click)="scrollToPosition(5000)">
+        <a href="#contact" (click)="navigateToSection('#contact'); $event.preventDefault();">
             <span class="heroEmail">simi.matter&#64;gmail.com</span>
         </a>
     </div>
 
-    <p class="scrollDownContainer">Scroll down<img src="../../assets/img/symbols/arrow_down.png"></p>
+    <p class="scrollDownContainer">{{ 'hero.scrollDown' | translate }}<img src="../../assets/img/symbols/arrow_down.png"></p>
 
 </section>

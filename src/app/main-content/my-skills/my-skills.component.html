@@ -62,23 +62,19 @@
 
     <div class="mySkillsContainer">
       <div class="mySkillsTitle">
-        <h1>My skills</h1>
+        <h1>{{ 'mySkills.title' | translate }}</h1>
         <div class="mySkillsBar"></div>
       </div>
 
       <div class="mySkillsTitleContent">        
-        <p>
-          I have gained experience in building projects with different frontend technologies and concepts.
-        </p>
+        <p>{{ 'mySkills.description' | translate }}</p>
       </div>
 
       <div class="mySkillsContent">
-        <h2>Looking for <span>another skill</span>?</h2>
-        <p>
-          Feel free to contact me. I look forward to expanding on my previous knowledge.
-        </p>
-        <a href="javascript:void(0)" (click)="scrollToPosition(5000)"
-          ><button class="mySkillsButton">Get in touch</button></a
+        <h2>{{ 'mySkills.cta.title' | translate }} <span class="mySkillsContentViolet">{{ 'mySkills.cta.titletext' | translate }}</span></h2>
+        <p>{{ 'mySkills.cta.text' | translate }}</p>
+        <a href="#contact" (click)="navigateToSection('#contact'); $event.preventDefault();"
+          ><button class="mySkillsButton">{{ 'mySkills.cta.button' | translate }}</button></a
         >
       </div>
     </div>
