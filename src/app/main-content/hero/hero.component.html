@@ -1,28 +1,28 @@
 <section class="heroSection" id="hero">
-    <div class="backgroundContainer"></div>
 
-    <div class="heroImageContainer">
-        <img class="heroShadow" src="assets/img/background/hero_shadow_green_purple.png">
-        <img class="heroProfilImage" src="assets/img/Simon_Matter2.png">
-    </div>
-
-    <div class="heroContentContainer">
-
-        <p class="sideText">{{ 'hero.sideText' | translate }}</p>
-
-        <div class="heroContent">
-            <div class="heroTitle">
-                <div class="textContainer">
-                    <h1>Simon Matter</h1>
-                    <h2>{{ 'hero.title' | translate }}</h2>
-                </div>
-            </div>
+    
+    <div class="heroSectionElipContainer">
+        <div class="heroImageContainer">
+            <img class="heroShadow" src="assets/img/background/hero_shadow_green_purple.png">
+            <img class="heroProfilImage" src="assets/img/Simon_Matter2.png">
         </div>
 
-        <div>
-            <a href="#contact" (click)="navigateToSection('#contact'); $event.preventDefault();">
-                <button class="heroButton">{{ 'hero.cta' | translate }}</button>
-            </a>        </div>
+        <div class="heroContentContainer">
+            <p class="sideText">I am</p>
+            <div class="heroContent">
+                <div class="heroTitle">
+                    <div class="textContainer">
+                        <h1>Simon Matter</h1>
+                        <h2>FRONTEND DEVELOPER</h2>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a href="#contact" (click)="navigateToSection('#contact'); $event.preventDefault();">
+                    <button class="heroButton">{{ 'hero.cta' | translate }}</button>
+                </a>        
+            </div>
+        </div>
     </div>
 
     

@@ -10,17 +10,23 @@ span {
   text-decoration: none;
 }
 
+.heroSectionElipContainer {
+  background-color: rgba(20, 29, 47, 1);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  clip-path: ellipse(100% 88% at 25% 10%);
+}
+
 .heroImageContainer {
   position: relative;
   padding-top: 160px;
-  padding-left: 100px;
 }
 
 .heroShadow {
   position: absolute;
-  padding-top: 100px;
-  width: 1200px;
-  height: 1200px;
+  width: 800px;
+  height: 800px;
   z-index: 0; 
 }
 
@@ -28,20 +34,19 @@ span {
   position: relative;
   object-fit: cover;
   object-position: top;
-  width: 950px;
-  margin-left: 100px;
+  width: 650px;
+  height: 650px;
+  margin-left: 50px;
   z-index: 1;
 }
 
 .heroContentContainer {
-  position: absolute;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 32px;
-  top: 300px;
-  right: 100px;
   z-index: 10;
 }
 
@@ -146,99 +151,21 @@ span {
   }
 }
 
-.backgroundContainer {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 750px;
-  height: 100%;
-  width: 100%;
-  background-image: url('../../../assets/img/background/Hero_Background.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: local;
-  z-index: 2; 
-}
-
-@media screen and (max-height: 1450px) {
-  .backgroundContainer {
-    top: 600px;
-  }
-}
-
-@media screen and (max-height: 1300px) {
-  .backgroundContainer {
-    top: 500px;
-  }
-}
-
-@media screen and (max-height: 1200px) {
-  .backgroundContainer {
-    top: 300px;
-  }
-
-  .heroProfilImage {
-    width: 650px;
-  }
-
-  .heroShadow {
-    width: 850px;
-    height: 850px;
-  }
-}
-
-@media screen and (max-height: 1000px) {
-  .backgroundContainer {
-    top: 100px;
-  }
-
-  .heroProfilImage {
-    width: 450px;
-  }
-
-  .heroShadow {
-    width: 650px;
-    height: 650px;
-  }
-}
-
-@media screen and (max-height: 800px) {
-  .backgroundContainer {
-    top: 0;
-  }
-
-  .heroProfilImage {
-    width: 350px;
-  }
-
-  .heroShadow {
-    width: 550px;
-    height: 550px;
-  }
-}
-
 @media screen and (max-width: 1500px) {
-  .backgroundContainer{
-    top: 320px;
-  }
-
-  .heroImageContainer {
-    margin-left: 0;
-  }
-  
-  .heroProfilImage {
-    width: 550px;
-  }
-
-  .heroShadow {
-    width: 750px;
-    height: 750px;
-  }
-
   .heroSection {
     display: flex;
     flex-direction: column; 
     align-items: center; 
+  }
+
+  .heroSectionElipContainer {
+    flex-direction: column;
+    gap: 64px;
+    clip-path: none;
+  }
+
+  .heroImageContainer {
+    clip-path: ellipse(100% 40% at 20% 60%);
   }
 
   .heroContentContainer {
@@ -274,15 +201,15 @@ span {
   }
 }
 
-@media screen and (max-width: 1200px) {
-  .heroProfilImage {
-    height: 720px;
+@media screen and (max-width: 950px) {
+  .heroShadow {
+    width: 650px;
+    height: 650px;
   }
-}
 
-@media screen and (max-width: 1000px) {
-  .heroImageContainer {
-    padding-left: 0;
+  .heroProfilImage {
+    width: 550px;
+    height: 550px;
   }
 }
 
@@ -306,21 +233,20 @@ span {
   }
 }
 
-@media screen and (max-width: 650px) {
-  .heroImageContainer {
-    margin-left: 0; 
+@media screen and (max-width: 750px) {
+  .heroShadow {
+    width: 500px;
+    height: 500px;
   }
 
   .heroProfilImage {
-    width: 560px;
-    margin-left: 0;
+    width: 450px;
+    height: 450px;
   }
+}
 
-  .heroShadow {
-    height: 600px;
-    width: 600px;
-  }
 
+@media screen and (max-width: 650px) {
   .heroContentContainer {
     left: 24px;
     right: 24px;
@@ -338,6 +264,17 @@ span {
     font-size: 36px;
     top: 20px;
     left: -72px; 
+  }
+
+  .heroShadow {
+    width: 350px;
+    height: 350px;
+  }
+
+  .heroProfilImage {
+    width: 350px;
+    height: 350px;
+    margin-left: 0;
   }
 }
 
@@ -359,15 +296,5 @@ span {
     font-size: 30px;
     top: 16px;
     left: -64px; 
-  }
-
-  .heroProfilImage {
-    height: 440px;
-    width: 440px;
-  }
-
-  .heroShadow {
-    height: 460px;
-    width: 460px;
   }
 }
