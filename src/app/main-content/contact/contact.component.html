@@ -38,7 +38,7 @@
                         alt="input check icon" 
                         class="inputIcon">
                 </div>
-                <span *ngIf="!name.valid && name.touched && !name.disabled" class="error-message">
+                <span *ngIf="!name.valid && name.touched && !name.disabled" class="errorMessage">
                     {{ 'contact.form.error' | translate }}
                 </span>
             </div>
@@ -54,7 +54,7 @@
                         name="email" 
                         placeholder="{{ 'contact.form.email.placeholder' | translate }}" 
                         required 
-                        email
+                        pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
                         [class.error]="!email.valid && email.touched && !email.disabled"
                         [class.valid]="email.valid && email.touched">
                     <img 
@@ -68,7 +68,7 @@
                         alt="input check icon" 
                         class="inputIcon">
                 </div>
-                <span *ngIf="!email.valid && email.touched && !email.disabled" class="error-message">
+                <span *ngIf="!email.valid && email.touched && !email.disabled" class="errorMessage">
                     {{ 'contact.form.email.error' | translate }}
                 </span>
             </div>
@@ -100,7 +100,7 @@
                         alt="textarea check icon" 
                         class="inputIcon">
                 </div>
-                <span *ngIf="!message.valid && message.touched && !message.disabled" class="error-message">
+                <span *ngIf="!message.valid && message.touched && !message.disabled" class="errorMessage">
                     {{ 'contact.form.message.error' | translate }}
                 </span>
             </div>

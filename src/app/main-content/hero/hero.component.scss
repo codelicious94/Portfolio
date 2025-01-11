@@ -1,6 +1,7 @@
 .heroSection {
   position: relative;
   height: 100vh;
+  background: linear-gradient(to bottom, #1A2743 0%, #27334B 50%, #141D2F 100%);
 }
 
 span {
@@ -11,11 +12,12 @@ span {
 }
 
 .heroSectionElipContainer {
-  background-color: rgba(20, 29, 47, 1);
+  background-color: #141D2F;
   display: flex;
   justify-content: space-around;
   align-items: center;
   clip-path: ellipse(100% 88% at 25% 10%);
+  width: 100%;
 }
 
 .heroImageContainer {
@@ -156,6 +158,7 @@ span {
     display: flex;
     flex-direction: column; 
     align-items: center; 
+    background-color: #141D2F;
   }
 
   .heroSectionElipContainer {
