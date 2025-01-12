@@ -158,7 +158,7 @@ span {
     display: flex;
     flex-direction: column; 
     align-items: center; 
-    background-color: #141D2F;
+    background: linear-gradient(to bottom, #141D2F 0%, #141D2F 50%, #141D2F 100%);
   }
 
   .heroSectionElipContainer {
