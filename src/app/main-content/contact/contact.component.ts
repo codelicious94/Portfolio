@@ -2,22 +2,23 @@ import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
-import { RouterModule } from '@angular/router';
+import { RouterModule, RouterLink } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule, CommonModule, RouterModule, TranslateModule],
+  imports: [FormsModule, CommonModule, RouterModule, RouterLink, TranslateModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
 
-  mailTest = true;
-  privacyPolicyChecked = false;
-  emailSent = false;
+  isSending: boolean = false;
+  emailSent: boolean = false;
+  isChecked: boolean = false;
 
+  privacyPolicyChecked: boolean = false;
   http = inject(HttpClient);
 
   contactData = {
@@ -26,8 +27,17 @@ export class ContactComponent {
     message: ""
   }
 
+  isFormValid(): boolean {
+    return (
+      (this.contactData.name?.trim() || '').length > 0 &&
+      (this.contactData.email?.trim() || '').length > 0 &&
+      (this.contactData.message?.trim() || '').length > 0 &&
+      this.isChecked
+    );
+  }
+
   post = {
-    endPoint: 'https://www.simonmatter.ch/sendMail.php',
+    endPoint: 'https://www.simonmatter.ch/portfolio/#/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -36,25 +46,40 @@ export class ContactComponent {
       },
     },
   };
+  
 
   onSubmit(ngForm: NgForm) {
-    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+    if (ngForm.submitted && ngForm.form.valid) {
+      this.isSending = true; // Anfrage gestartet
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-            this.emailSent = true; // Erfolgsmeldung aktivieren
+            this.emailSent = true;
             ngForm.resetForm();
           },
           error: (error) => {
-            console.error(error);
+            console.error('Error:', error);
+            alert('Failed to send the email. Please try again later.');
           },
-          complete: () => console.info('send post complete'),
+          complete: () => {
+            this.isSending = false; // Anfrage abgeschlossen
+          },
         });
-    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-      this.emailSent = true; // Erfolgsmeldung aktivieren
-      ngForm.resetForm();
     }
   }
+  
+
+  closeOverlay(contactForm: NgForm) {
+    this.emailSent = false; 
+    this.resetForm(contactForm);
+  }
+
+
+  resetForm(contactForm: NgForm) {
+    this.contactData = { name: '', email: '', message: '' };
+    contactForm.reset();
+  }
+
 
   togglePrivacyPolicy() {
     this.privacyPolicyChecked = !this.privacyPolicyChecked;

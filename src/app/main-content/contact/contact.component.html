@@ -128,7 +128,7 @@
             
             <button 
                 type="submit" 
-                [disabled]="!contactForm.form.valid || !privacyPolicyChecked" 
+                [disabled]="!contactForm.form.valid || !privacyPolicyChecked || isSending" 
                 class="submitButton">
                 {{ 'contact.form.button' | translate }}
             </button>
