@@ -37,7 +37,7 @@ export class ContactComponent {
   }
 
   post = {
-    endPoint: 'https://www.simonmatter.ch/portfolio/#/sendMail.php',
+    endPoint: 'https://www.simonmatter.ch/portfolio/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -50,7 +50,7 @@ export class ContactComponent {
 
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid) {
-      this.isSending = true; // Anfrage gestartet
+      this.isSending = true; 
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
@@ -62,7 +62,7 @@ export class ContactComponent {
             alert('Failed to send the email. Please try again later.');
           },
           complete: () => {
-            this.isSending = false; // Anfrage abgeschlossen
+            this.isSending = false;
           },
         });
     }
