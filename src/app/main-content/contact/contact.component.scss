@@ -207,6 +207,13 @@ textarea.error {
     transform: scale(1.1); 
 }
 
+.successMessage {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #70E61C;
+}
+
 @media screen and (max-width: 1200px) {
     .contactTitle {
         margin-right: 100px;

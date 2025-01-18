@@ -1,6 +1,7 @@
 .heroSection {
   position: relative;
   height: 100vh;
+  width: 100%;
   background: linear-gradient(to bottom, #1A2743 0%, #27334B 50%, #141D2F 100%);
 }
 
@@ -148,8 +149,21 @@ span {
   transform-origin: right center;
   font-size: 24px;
   gap: 10px;
-  > img {
+    > img {
     transform: rotate(-90deg);
+  }
+}
+
+.scrollDownText {
+  animation: moveUpDown 1.5s infinite ease-in-out;
+}
+
+@keyframes moveUpDown {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-10px);
   }
 }
 

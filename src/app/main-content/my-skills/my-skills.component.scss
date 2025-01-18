@@ -6,11 +6,12 @@
 }
 
 .framesContainer {
-    width: 664px;
+    width: 700px;
     height: 404px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;   
+    justify-content: center;
     gap: 88px;
 }
 
@@ -24,6 +25,8 @@
     font-weight: 700;
     gap: 10px;
     z-index: 150;
+    width: 88px;
+    height: 100px;
     > img {
         position: relative;
         width: 54px;

@@ -55,6 +55,11 @@ export class ContactComponent {
         .subscribe({
           next: (response) => {
             this.emailSent = true;
+  
+            setTimeout(() => {
+              this.emailSent = false;
+            }, 2000);
+  
             ngForm.resetForm();
           },
           error: (error) => {
