@@ -109,6 +109,13 @@
     filter: blur(86px);
 }
 
+.leptopProjects {
+    cursor: pointer;
+    &:hover {
+        filter: grayscale(100%);
+    }
+}
+
 
 @media screen and (max-width: 1200px) {
     .portfolioProjectsContainer {
