@@ -4,6 +4,8 @@ import { RouterOutlet } from '@angular/router';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { TranslateService } from '@ngx-translate/core';
+
 
 @Component({
   selector: 'app-root',
@@ -13,8 +15,15 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  constructor() {}
-}
+  constructor(private translate: TranslateService) {
+    this.translate.addLangs(['en', 'de']);
+    const savedLanguage = localStorage.getItem('appLanguage') || 'en'; 
+    this.translate.setDefaultLang(savedLanguage);
+    this.translate.use(savedLanguage).subscribe(() => {
+      console.log(`Sprache erfolgreich geladen: ${savedLanguage}`);
+    });
+  }
+}  
 
 export function HttpLoaderFactory() {
   const http = inject(HttpClient);

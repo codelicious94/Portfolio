@@ -1,60 +1,64 @@
 <section>
     <div>
         <a href="">
-        <img class="arrowLeft" src="assets/img/symbols/arrow_left.png">
+            <img class="arrowLeft" src="assets/img/symbols/arrow_left.png">
         </a>
     </div>
+    
+    <div class="languageContainer">
+        <div>
+          <img class="languageLogos" src="assets/img/symbols/england.png" alt="English" (click)="switchLanguage('en')">
+        </div>
+        <div>
+          <img class="languageLogos" src="assets/img/symbols/german.png" alt="German" (click)="switchLanguage('de')">
+        </div>
+      </div>
+      
     <div class="legalNoticeContainer">
         <div>
-            <h1>Legal Notice</h1>
+            <h1>{{ 'legalNotice.title' | translate }}</h1>
+        </div>
+    
+        <h2>{{ 'legalNotice.imprint.title' | translate }}</h2>
+
+        <div>
+            <h3>{{ 'legalNotice.contactLegalNotice.title' | translate }}</h3>
+            <span>E-Mail: {{ 'legalNotice.contact.content' | translate }}<a href="mailto:simi.matter@gmail.com"> simi.matter&#64;gmail.com</a></span>
         </div>
 
-        <h2>Imprint</h2>
+        <div>
+            <h3>{{ 'legalNotice.terms.title' | translate }}</h3>
+            <p>{{ 'legalNotice.terms.content' | translate }}</p>
+        </div>
 
         <div>
-        <ul>
-            <li>Simon Matter</li>
-            <li>Kohlgrubenweg 1</li>
-            <li>5436 Würenlos</li>
-        </ul>
+            <h3>{{ 'legalNotice.ownership.title' | translate }}</h3>
+            <p>{{ 'legalNotice.ownership.content' | translate }}</p>
         </div>
-    
+
         <div>
-            <h3>Contact Information</h3>
-            <span>E-Mail: <a href="mailto:simi.matter@gmail.com">simi.matter&#64;gmail.com</a></span>
+            <h3>{{ 'legalNotice.rights.title' | translate }}</h3>
+            <p>{{ 'legalNotice.rights.content' | translate }}</p>
         </div>
-    
+
         <div>
-            <h3>Acceptance of Terms</h3>
-            <p>By accessing and using this Portfolio ("Product"), you acknowledge and agree to the following terms and conditions, as well as any policies or amendments that I, Simon Matter, may update from time to time without notice.</p>
+            <h3>{{ 'legalNotice.usage.title' | translate }}</h3>
+            <p>{{ 'legalNotice.usage.content' | translate }}</p>
         </div>
-    
+
         <div>
-            <h3>Scope and Ownership of the Product</h3>
-            <p>This Portfolio has been developed by me, Simon Matter, as part of a web development bootcamp at the <a href="https://developerakademie.com/" target="_blank">Developer Akademie GmbH</a>. It serves an educational purpose and is not intended for extensive personal or business usage. I cannot guarantee consistent availability, reliability, accuracy, or any other aspect of quality regarding this Product.
-            <br><br>The design of this Portfolio is owned by the <a href="https://developerakademie.com/" target="_blank">Developer Akademie GmbH</a>. Unauthorized use, reproduction, modification, distribution, or replication of the design is strictly prohibited.</p>
+            <h3>{{ 'legalNotice.disclaimer.title' | translate }}</h3>
+            <p>{{ 'legalNotice.disclaimer.content' | translate }}</p>
         </div>
-    
+
         <div>
-            <h3>Proprietary Rights</h3>
-            <p>Apart from the design owned by the <a href="https://developerakademie.com/" target="_blank">Developer Akademie GmbH</a>, I, Simon Matter, retain all proprietary rights in this Portfolio, including any associated copyrighted material, trademarks, and other proprietary information.</p>
+            <h3>{{ 'legalNotice.indemnity.title' | translate }}</h3>
+            <p>{{ 'legalNotice.indemnity.content' | translate }}</p>
         </div>
-    
+
         <div>
-            <h3>Use of the Product</h3>
-            <p>This Portfolio is intended to be used for lawful purposes only, in accordance with all applicable laws and regulations. Any use of this Portfolio for illegal activities, or to harass, harm, threaten, or intimidate another person, is strictly prohibited. You are solely responsible for your interactions with other users of this Portfolio.</p>
-        </div>
-    
-        <div>
-            <h3>Disclaimer of Warranties and Limitation of Liability</h3>
-            <p>This Portfolio is provided "as is" without warranty of any kind, whether express or implied, including but not limited to the implied warranties of merchantability, fitness for a particular purpose, and non-infringement. In no event will I, Simon Matter, or the <a href="https://developerakademie.com/" target="_blank">Developer Akademie GmbH</a>, be liable for any direct, indirect, incidental, special, consequential, or exemplary damages, including but not limited to damages for loss of profits, goodwill, use, data, or other intangible losses, even if advised of the possibility of such damages, arising out of or in connection with the use or performance of this Portfolio.</p>
-        </div>
-    
-        <div>
-            <h3>Indemnity</h3>
-            <p>You agree to indemnify, defend, and hold harmless me, Simon Matter, as well as the <a href="https://developerakademie.com/" target="_blank">Developer Akademie GmbH</a>, and our affiliates, partners, officers, directors, agents, and employees, from and against any claim, demand, loss, damage, cost, or liability (including reasonable legal fees) arising out of or relating to your use of this Portfolio and/or your breach of this Legal Notice.
-            <br><br>For any questions or notices, please contact me at <a href="mailto:simi.matter@gmail.com">simi.matter&#64;gmail.com</a>.
-            <br><br>Date: December 18, 2024</p>
+            <h3>{{ 'legalNotice.contact.title' | translate }}</h3>
+            <p>{{ 'legalNotice.contact.content' | translate }}<a href="mailto:simi.matter@gmail.com"> simi.matter&#64;gmail.com</a></p>
         </div>
     </div>
 </section>

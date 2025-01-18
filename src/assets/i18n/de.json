@@ -97,6 +97,172 @@
         "successMessage": "Ihre E-Mail wurde erfolgreich gesendet!",
         "button": "Nachricht senden"
       }
+    },
+    "legalNotice": {
+      "title": "Impressum",
+      "imprint": {
+        "title": "Impressum"
+      },
+      "contactLegalNotice": {
+        "title": "Kontaktinformationen"
+      },
+      "terms": {
+        "title": "Akzeptanz der Bedingungen",
+        "content": "Durch den Zugriff und die Nutzung dieses Portfolios („Produkt“) erkennen Sie die folgenden Bedingungen an und stimmen ihnen zu sowie allen Richtlinien oder Änderungen, die ich, Simon Matter, möglicherweise von Zeit zu Zeit ohne Vorankündigung aktualisiere."
+      },
+      "ownership": {
+        "title": "Umfang und Eigentum des Produkts",
+        "content": "Dieses Portfolio wurde von mir, Simon Matter, als Teil eines Webentwicklung-Bootcamps bei der Developer Akademie GmbH erstellt. Es dient Bildungszwecken und ist nicht für umfangreiche persönliche oder geschäftliche Nutzung vorgesehen. Ich kann keine konstante Verfügbarkeit, Zuverlässigkeit, Genauigkeit oder andere Aspekte der Qualität dieses Produkts garantieren.\n\nDas Design dieses Portfolios gehört der Developer Akademie GmbH. Die unbefugte Nutzung, Reproduktion, Modifikation, Verteilung oder Nachbildung des Designs ist strengstens untersagt."
+      },
+      "rights": {
+        "title": "Eigentumsrechte",
+        "content": "Abgesehen vom Design, das der Developer Akademie GmbH gehört, behalte ich, Simon Matter, alle Eigentumsrechte an diesem Portfolio, einschließlich aller zugehörigen urheberrechtlich geschützten Materialien, Marken und anderen geschützten Informationen."
+      },
+      "usage": {
+        "title": "Nutzung des Produkts",
+        "content": "Dieses Portfolio ist ausschließlich für legale Zwecke bestimmt, in Übereinstimmung mit allen geltenden Gesetzen und Vorschriften. Jegliche Nutzung dieses Portfolios für illegale Aktivitäten oder zur Belästigung, Schädigung, Bedrohung oder Einschüchterung einer anderen Person ist strengstens untersagt. Sie sind allein verantwortlich für Ihre Interaktionen mit anderen Benutzern dieses Portfolios."
+      },
+      "disclaimer": {
+        "title": "Haftungsausschluss und Begrenzung der Haftung",
+        "content": "Dieses Portfolio wird 'wie besehen' ohne jegliche Garantie bereitgestellt, weder ausdrücklich noch stillschweigend, einschließlich, aber nicht beschränkt auf stillschweigende Garantien der Marktgängigkeit, Eignung für einen bestimmten Zweck und Nichtverletzung. In keinem Fall haften ich, Simon Matter, oder die Developer Akademie GmbH für direkte, indirekte, zufällige, spezielle, Folgeschäden oder exemplarische Schäden, einschließlich, aber nicht beschränkt auf Schäden durch entgangenen Gewinn, Goodwill, Nutzung, Daten oder andere immaterielle Verluste, selbst wenn auf die Möglichkeit solcher Schäden hingewiesen wurde, die sich aus oder im Zusammenhang mit der Nutzung oder Leistung dieses Portfolios ergeben."
+      },
+      "indemnity": {
+        "title": "Schadloshaltung",
+        "content": "Sie erklären sich damit einverstanden, mich, Simon Matter, sowie die Developer Akademie GmbH und unsere verbundenen Unternehmen, Partner, leitenden Angestellten, Direktoren, Agenten und Mitarbeiter von jeglichen Ansprüchen, Forderungen, Verlusten, Schäden, Kosten oder Haftungen (einschließlich angemessener Anwaltsgebühren) freizustellen, zu verteidigen und schadlos zu halten, die sich aus Ihrer Nutzung dieses Portfolios und/oder Ihrer Verletzung dieses Impressums ergeben."
+      },
+      "contact": {
+        "title": "Kontakt",
+        "content": "Bei Fragen oder Mitteilungen kontaktieren Sie mich bitte unter:"
+      }
+    },
+    "privacyPolicy": {
+      "title": "Datenschutzerklärung",
+      "updated": "Zuletzt aktualisiert: 19. Dezember 2024",
+      "introduction": {
+        "content": "Diese Datenschutzerklärung beschreibt unsere Richtlinien und Verfahren zur Erfassung, Nutzung und Offenlegung Ihrer Informationen, wenn Sie den Service nutzen, und informiert Sie über Ihre Datenschutzrechte und wie das Gesetz Sie schützt. Wir verwenden Ihre personenbezogenen Daten, um den Service bereitzustellen und zu verbessern. Durch die Nutzung des Services stimmen Sie der Erfassung und Nutzung von Informationen gemäß dieser Datenschutzerklärung zu."
+      },
+      "interpretation": {
+        "title": "Interpretation und Definitionen",
+        "interpretation": {
+          "title": "Interpretation",
+          "content": "Wörter, bei denen der Anfangsbuchstabe großgeschrieben ist, haben die unter den folgenden Bedingungen definierten Bedeutungen. Die folgenden Definitionen haben dieselbe Bedeutung, unabhängig davon, ob sie im Singular oder Plural erscheinen."
+        },
+        "definitions": {
+          "title": "Definitionen",
+          "intro": "Die folgenden Definitionen erläutern die in dieser Datenschutzerklärung verwendeten Begriffe. Diese Definitionen gelten unabhängig davon, ob die Begriffe im Singular oder Plural verwendet werden.",
+          "content": {
+            "account": {
+              "title": "Konto",
+              "description": "Ein eindeutiges Konto, das für Sie erstellt wurde, um auf unseren Service oder Teile unseres Services zuzugreifen."
+            },
+            "affiliate": {
+              "title": "Partner",
+              "description": "Eine Einheit, die eine Partei kontrolliert, von ihr kontrolliert wird oder mit ihr unter gemeinsamer Kontrolle steht, wobei 'Kontrolle' den Besitz von 50 % oder mehr der Anteile, des Eigenkapitals oder anderer Wertpapiere umfasst, die zur Wahl von Direktoren oder einer anderen leitenden Behörde berechtigt sind."
+            },
+            "company": {
+              "title": "Unternehmen",
+              "description": "Das Unternehmen (im Rahmen dieses Vertrags entweder als 'das Unternehmen', 'wir', 'uns' oder 'unser' bezeichnet) bezieht sich auf Portfolio."
+            },
+            "cookies": {
+              "title": "Cookies",
+              "description": "Kleine Dateien, die auf Ihrem Computer, Mobilgerät oder einem anderen Gerät von einer Website abgelegt werden und Informationen zu Ihrem Browserverlauf auf dieser Website enthalten."
+            },
+            "country": {
+              "title": "Land",
+              "description": "Deutschland"
+            },
+            "device": {
+              "title": "Gerät",
+              "description": "Jedes Gerät, das auf den Service zugreifen kann, z. B. ein Computer, ein Mobiltelefon oder ein digitales Tablet."
+            },
+            "personalData": {
+              "title": "Personenbezogene Daten",
+              "description": "Alle Informationen, die sich auf eine identifizierte oder identifizierbare Person beziehen."
+            },
+            "service": {
+              "title": "Service",
+              "description": "Bezieht sich auf die Website."
+            },
+            "serviceProvider": {
+              "title": "Dienstleister",
+              "description": "Jede natürliche oder juristische Person, die die Daten im Auftrag des Unternehmens verarbeitet. Es handelt sich um Drittunternehmen oder Einzelpersonen, die vom Unternehmen beauftragt werden, den Service zu erleichtern, den Service im Auftrag des Unternehmens bereitzustellen, dienstleistungsbezogene Dienstleistungen zu erbringen oder dem Unternehmen bei der Analyse der Nutzung des Services zu helfen."
+            },
+            "usageData": {
+              "title": "Nutzungsdaten",
+              "description": "Automatisch erfasste Daten, entweder durch die Nutzung des Services oder von der Serviceinfrastruktur selbst generiert (z. B. die Dauer eines Seitenbesuchs)."
+            },
+            "website": {
+              "title": "Website",
+              "description": "Bezieht sich auf Portfolio, erreichbar unter https://github.com/codelicious94/Portfolio."
+            },
+            "you": {
+              "title": "Sie",
+              "description": "Die Person, die auf den Service zugreift oder ihn nutzt, oder das Unternehmen oder eine andere juristische Person, in deren Namen diese Person auf den Service zugreift oder ihn nutzt."
+            }
+          }
+        }
+      },
+      "dataCollection": {
+        "title": "Erfassung und Nutzung Ihrer personenbezogenen Daten",
+        "types": {
+          "title": "Arten der erfassten Daten",
+          "personalData": {
+            "title": "Personenbezogene Daten",
+            "content": "Während der Nutzung unseres Services können wir Sie bitten, uns bestimmte personenbezogene Daten zur Verfügung zu stellen, die zur Kontaktaufnahme oder Identifizierung verwendet werden können. Zu den personenbezogenen Daten können gehören: E-Mail-Adresse, Vor- und Nachname, Nutzungsdaten."
+          },
+          "usageData": {
+            "title": "Nutzungsdaten",
+            "content": "Nutzungsdaten werden automatisch erfasst, wenn Sie den Service nutzen. Zu diesen Daten können Informationen wie die Internetprotokolladresse (IP-Adresse) Ihres Geräts, der Browsertyp, die Browserversion, die Seiten unseres Services, die Sie besuchen, die Uhrzeit und das Datum Ihres Besuchs, die auf diesen Seiten verbrachte Zeit, eindeutige Gerätekennungen und andere Diagnosedaten gehören."
+          }
+        }
+      },
+      "cookies": {
+        "title": "Tracking-Technologien und Cookies",
+        "content": "Wir verwenden Cookies und ähnliche Tracking-Technologien, um die Aktivität auf unserem Service zu verfolgen und bestimmte Informationen zu speichern. Zu den verwendeten Technologien gehören Beacons, Tags und Skripte. Cookies können 'Persistente Cookies' oder 'Sitzungscookies' sein. Persistente Cookies verbleiben auf Ihrem persönlichen Computer oder Mobilgerät, wenn Sie offline gehen, während Sitzungscookies gelöscht werden, sobald Sie Ihren Webbrowser schließen."
+      },
+      "useOfData": {
+        "title": "Verwendung Ihrer personenbezogenen Daten",
+        "content": "Das Unternehmen kann personenbezogene Daten für folgende Zwecke verwenden: Zur Bereitstellung und Aufrechterhaltung unseres Services, zur Verwaltung Ihres Kontos, zur Vertragserfüllung, zur Kontaktaufnahme mit Ihnen, zur Bereitstellung von Neuigkeiten, Sonderangeboten und allgemeinen Informationen über andere Waren, Dienstleistungen und Veranstaltungen sowie für andere Zwecke wie Datenanalyse, Identifizierung von Nutzungstrends und Verbesserung unseres Services."
+      },
+      "dataRetention": {
+        "title": "Aufbewahrung Ihrer personenbezogenen Daten",
+        "content": "Das Unternehmen bewahrt Ihre personenbezogenen Daten nur so lange auf, wie es für die in dieser Datenschutzerklärung festgelegten Zwecke erforderlich ist. Nutzungsdaten werden in der Regel für einen kürzeren Zeitraum aufbewahrt, es sei denn, diese Daten werden zur Verbesserung der Sicherheit oder Funktionalität unseres Services benötigt."
+      },
+      "dataDisclosure": {
+        "title": "Offenlegung Ihrer personenbezogenen Daten",
+        "businessTransactions": {
+          "title": "Geschäftsvorgänge",
+          "content": "Wenn das Unternehmen an einer Fusion, Übernahme oder einem Verkauf von Vermögenswerten beteiligt ist, können Ihre personenbezogenen Daten übertragen werden."
+        },
+        "lawEnforcement": {
+          "title": "Strafverfolgung",
+          "content": "Unter bestimmten Umständen kann das Unternehmen verpflichtet sein, Ihre personenbezogenen Daten offenzulegen, wenn dies gesetzlich vorgeschrieben ist oder auf gültige Anfragen von Behörden (z. B. ein Gericht oder eine Regierungsbehörde) erfolgt."
+        },
+        "otherLegalRequirements": {
+          "title": "Andere rechtliche Anforderungen",
+          "content": "Das Unternehmen kann Ihre personenbezogenen Daten in gutem Glauben offenlegen, dass eine solche Maßnahme erforderlich ist, um einer rechtlichen Verpflichtung nachzukommen, die Rechte oder das Eigentum des Unternehmens zu schützen, mögliche Fehlverhalten im Zusammenhang mit dem Service zu verhindern oder zu untersuchen und die persönliche Sicherheit von Nutzern des Services oder der Öffentlichkeit zu schützen."
+        }
+      },
+      "security": {
+        "title": "Sicherheit Ihrer personenbezogenen Daten",
+        "content": "Die Sicherheit Ihrer personenbezogenen Daten ist uns wichtig. Es ist jedoch zu beachten, dass keine Übertragungsmethode über das Internet oder Methode der elektronischen Speicherung zu 100 % sicher ist."
+      },
+      "children": {
+        "title": "Datenschutz von Kindern",
+        "content": "Unser Service richtet sich nicht an Personen unter 13 Jahren. Wir sammeln wissentlich keine personenbezogenen Daten von Personen unter 13 Jahren. Wenn Sie ein Elternteil oder Erziehungsberechtigter sind und wissen, dass Ihr Kind uns personenbezogene Daten zur Verfügung gestellt hat, kontaktieren Sie uns bitte."
+      },
+      "links": {
+        "title": "Links zu anderen Websites",
+        "content": "Unser Service kann Links zu anderen Websites enthalten, die nicht von uns betrieben werden. Wir übernehmen keine Verantwortung für den Inhalt, die Datenschutzrichtlinien oder Praktiken von Websites oder Services Dritter."
+      },
+      "changes": {
+        "title": "Änderungen dieser Datenschutzerklärung",
+        "content": "Wir können unsere Datenschutzerklärung von Zeit zu Zeit aktualisieren. Änderungen dieser Datenschutzerklärung werden wirksam, wenn sie auf dieser Seite veröffentlicht werden."
+      },
+      "contact": {
+        "title": "Kontaktieren Sie uns",
+        "content": "Wenn Sie Fragen zu dieser Datenschutzerklärung haben, können Sie uns per E-Mail kontaktieren:"
+      }
     }
   }
   

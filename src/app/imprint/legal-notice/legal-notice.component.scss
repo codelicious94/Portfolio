@@ -47,6 +47,28 @@ a {
     cursor: pointer; 
 }
 
+.menuContainer {
+    display: flex;
+    align-items: center;
+}
+  
+.languageContainer {
+    display: flex;
+    gap: 16px;
+    justify-content: flex-end;
+    margin: 0 50px;
+}
+  
+.languageLogos {
+    height: 32px;
+}
+  
+.languageLogos:hover {
+    cursor: pointer;
+    scale: 1.1;
+}
+  
+
 @media screen and (max-width: 600px) {
     section {
         margin: 64px;

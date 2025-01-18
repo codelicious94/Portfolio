@@ -97,5 +97,170 @@
       "successMessage": "Your email has been sent successfully!",
       "button": "Send message"
     }
+  },
+  "legalNotice": {
+    "title": "Legal Notice",
+    "imprint": {
+      "title": "Imprint"
+    },
+    "contactLegalNotice": {
+      "title": "Contact Information"
+    },
+    "terms": {
+      "title": "Acceptance of Terms",
+      "content": "By accessing and using this Portfolio ('Product'), you acknowledge and agree to the following terms and conditions, as well as any policies or amendments that I, Simon Matter, may update from time to time without notice."
+    },
+    "ownership": {
+      "title": "Scope and Ownership of the Product",
+      "content": "This Portfolio has been developed by me, Simon Matter, as part of a web development bootcamp at the Developer Akademie GmbH. It serves an educational purpose and is not intended for extensive personal or business usage. I cannot guarantee consistent availability, reliability, accuracy, or any other aspect of quality regarding this Product.\n\nThe design of this Portfolio is owned by the Developer Akademie GmbH. Unauthorized use, reproduction, modification, distribution, or replication of the design is strictly prohibited."
+    },
+    "rights": {
+      "title": "Proprietary Rights",
+      "content": "Apart from the design owned by the Developer Akademie GmbH, I, Simon Matter, retain all proprietary rights in this Portfolio, including any associated copyrighted material, trademarks, and other proprietary information."
+    },
+    "usage": {
+      "title": "Use of the Product",
+      "content": "This Portfolio is intended to be used for lawful purposes only, in accordance with all applicable laws and regulations. Any use of this Portfolio for illegal activities, or to harass, harm, threaten, or intimidate another person, is strictly prohibited. You are solely responsible for your interactions with other users of this Portfolio."
+    },
+    "disclaimer": {
+      "title": "Disclaimer of Warranties and Limitation of Liability",
+      "content": "This Portfolio is provided 'as is' without warranty of any kind, whether express or implied, including but not limited to the implied warranties of merchantability, fitness for a particular purpose, and non-infringement. In no event will I, Simon Matter, or the Developer Akademie GmbH, be liable for any direct, indirect, incidental, special, consequential, or exemplary damages, including but not limited to damages for loss of profits, goodwill, use, data, or other intangible losses, even if advised of the possibility of such damages, arising out of or in connection with the use or performance of this Portfolio."
+    },
+    "indemnity": {
+      "title": "Indemnity",
+      "content": "You agree to indemnify, defend, and hold harmless me, Simon Matter, as well as the Developer Akademie GmbH, and our affiliates, partners, officers, directors, agents, and employees, from and against any claim, demand, loss, damage, cost, or liability (including reasonable legal fees) arising out of or relating to your use of this Portfolio and/or your breach of this Legal Notice."
+    },
+    "contact": {
+      "title": "Contact",
+      "content": "For any questions or notices, please contact me at:"
+    }
+  },
+  "privacyPolicy": {
+  "title": "Privacy Policy",
+  "updated": "Last updated: December 19, 2024",
+  "introduction": {
+    "content": "This Privacy Policy describes our policies and procedures on the collection, use, and disclosure of your information when you use the Service, and informs you about your privacy rights and how the law protects you. We use your personal data to provide and improve the Service. By using the Service, you agree to the collection and use of information in accordance with this Privacy Policy."
+  },
+  "interpretation": {
+    "title": "Interpretation and Definitions",
+    "interpretation": {
+      "title": "Interpretation",
+      "content": "Words with the initial letter capitalized have meanings defined under the following conditions. The following definitions have the same meaning regardless of whether they appear in singular or plural."
+    },
+    "definitions": {
+      "title": "Definitions",
+      "intro": "The following definitions clarify the terms used in this Privacy Policy. These definitions apply whether the terms are used in singular or plural.",
+      "content": {
+        "account": {
+          "title": "Account",
+          "description": "A unique account created for you to access our Service or parts of our Service."
+        },
+        "affiliate": {
+          "title": "Affiliate",
+          "description": "An entity that controls, is controlled by, or is under common control with a party, where 'control' means ownership of 50% or more of the shares, equity interest, or other securities entitled to vote for election of directors or other managing authority."
+        },
+        "company": {
+          "title": "Company",
+          "description": "The Company (referred to as either 'the Company', 'We', 'Us' or 'Our' in this Agreement) refers to Portfolio."
+        },
+        "cookies": {
+          "title": "Cookies",
+          "description": "Small files that are placed on your computer, mobile device, or any other device by a website, containing the details of your browsing history on that website among its many uses."
+        },
+        "country": {
+          "title": "Country",
+          "description": "Germany"
+        },
+        "device": {
+          "title": "Device",
+          "description": "Any device that can access the Service such as a computer, a cellphone, or a digital tablet."
+        },
+        "personalData": {
+          "title": "Personal Data",
+          "description": "Any information that relates to an identified or identifiable individual."
+        },
+        "service": {
+          "title": "Service",
+          "description": "Refers to the Website."
+        },
+        "serviceProvider": {
+          "title": "Service Provider",
+          "description": "Any natural or legal person who processes the data on behalf of the Company. It refers to third-party companies or individuals employed by the Company to facilitate the Service, to provide the Service on behalf of the Company, to perform services related to the Service, or to assist the Company in analyzing how the Service is used."
+        },
+        "usageData": {
+          "title": "Usage Data",
+          "description": "Data collected automatically, either generated by the use of the Service or from the Service infrastructure itself (for example, the duration of a page visit)."
+        },
+        "website": {
+          "title": "Website",
+          "description": "Refers to Portfolio, accessible from https://github.com/codelicious94/Portfolio."
+        },
+        "you": {
+          "title": "You",
+          "description": "The individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable."
+        }
+      }
+    }
+  },
+  "dataCollection": {
+    "title": "Collecting and Using Your Personal Data",
+    "types": {
+      "title": "Types of Data Collected",
+      "personalData": {
+        "title": "Personal Data",
+        "content": "While using our Service, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you. Personally identifiable information may include: Email address, First and last name, Usage data."
+      },
+      "usageData": {
+        "title": "Usage Data",
+        "content": "Usage Data is collected automatically when using the Service. Usage Data may include information such as your Device's Internet Protocol address (e.g. IP address), browser type, browser version, the pages of our Service that you visit, the time and date of your visit, the time spent on those pages, unique device identifiers, and other diagnostic data."
+      }
+    }
+  },  "cookies": {
+    "title": "Tracking Technologies and Cookies",
+    "content": "We use cookies and similar tracking technologies to track the activity on our Service and store certain information. Technologies used include beacons, tags, and scripts. Cookies can be 'Persistent Cookies' or 'Session Cookies.' Persistent Cookies remain on your personal computer or mobile device when you go offline, while Session Cookies are deleted as soon as you close your web browser."
+  },
+  "useOfData": {
+    "title": "Use of Your Personal Data",
+    "content": "The Company may use personal data for the following purposes: To provide and maintain our Service, to manage your account, to fulfill contractual obligations, to contact you, to provide news, special offers, and general information about other goods, services, and events, and for other purposes such as data analysis, identifying usage trends, and improving our Service."
+  },
+  "dataRetention": {
+    "title": "Retention of Your Personal Data",
+    "content": "The Company will retain your personal data only for as long as necessary for the purposes outlined in this Privacy Policy. Usage Data is generally retained for a shorter period, except when this data is used to improve the security or functionality of our Service."
+  },
+  "dataDisclosure": {
+    "title": "Disclosure of Your Personal Data",
+    "businessTransactions": {
+      "title": "Business Transactions",
+      "content": "If the Company is involved in a merger, acquisition, or asset sale, your personal data may be transferred."
+    },
+    "lawEnforcement": {
+      "title": "Law Enforcement",
+      "content": "Under certain circumstances, the Company may be required to disclose your personal data if required to do so by law or in response to valid requests by public authorities (e.g., a court or a government agency)."
+    },
+    "otherLegalRequirements": {
+      "title": "Other Legal Requirements",
+      "content": "The Company may disclose your personal data in the good faith belief that such action is necessary to comply with a legal obligation, protect the rights or property of the Company, prevent or investigate possible wrongdoing in connection with the Service, or protect the personal safety of users of the Service or the public."
+    }
+  },
+  "security": {
+    "title": "Security of Your Personal Data",
+    "content": "The security of your personal data is important to us. However, no method of transmission over the internet or method of electronic storage is 100% secure."
+  },
+  "children": {
+    "title": "Children's Privacy",
+    "content": "Our Service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from anyone under the age of 13. If you are a parent or guardian and you are aware that your child has provided us with personal data, please contact us."
+  },
+  "links": {
+    "title": "Links to Other Websites",
+    "content": "Our Service may contain links to other websites that are not operated by us. We are not responsible for the content, privacy policies, or practices of any third-party websites or services."
+  },
+  "changes": {
+    "title": "Changes to This Privacy Policy",
+    "content": "We may update our Privacy Policy from time to time. Changes to this Privacy Policy will become effective when they are posted on this page."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "content": "If you have any questions about this Privacy Policy, you can contact us by email:"
+  }
   }
 }
