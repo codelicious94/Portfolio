@@ -1,7 +1,7 @@
 .heroSection {
-  position: relative;
-  height: 100vh;
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   background: linear-gradient(to bottom, #1A2743 0%, #27334B 50%, #141D2F 100%);
 }
 
@@ -18,7 +18,6 @@ span {
   justify-content: space-around;
   align-items: center;
   clip-path: ellipse(100% 88% at 25% 10%);
-  width: 100%;
 }
 
 .heroImageContainer {
@@ -108,13 +107,14 @@ span {
 }
 
 .heroSocialMediaContainer {
-  position: absolute;
+  position: relative;
   display: flex;
   text-align: center;
   align-items: center;
   z-index: 3;
   gap: 32px;
-  bottom: 32px;
+  bottom: 0;
+  top: 32px;
   > a {
     cursor: pointer;
   }
@@ -136,17 +136,14 @@ span {
 }
 
 .scrollDownContainer {
-  color: white;
-  position: absolute;
-  z-index: 3;
-  right: 100px;
-  bottom: 32px;
-  display: flex;
-  text-align: center;
-  flex-direction: row;
-  align-items: center;
+  position: relative; 
   transform: rotate(90deg);
-  transform-origin: right center;
+  transform-origin: center right; 
+  margin-left: auto;
+  margin-right: 32px;
+  color: white;
+  display: flex;
+  align-items: center;
   font-size: 24px;
   gap: 10px;
     > img {

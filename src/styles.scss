@@ -1,13 +1,23 @@
 * {
-  margin: 0;
   scroll-behavior: smooth;
   box-sizing: border-box;
   font-family: 'Poppins';
-  max-width: 2000px;
 }
 
 body {
   background-color: #141D2F;
+  display: flex;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.mainContent {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 2000px;
+  width: 100%;
 }
 
 ::-webkit-scrollbar {
