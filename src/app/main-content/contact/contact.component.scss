@@ -5,7 +5,6 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
-    overflow-x: hidden;
     color: white;
 }
 
@@ -297,5 +296,22 @@ textarea.error {
         > h1 {
             font-size: 48px;
         }
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .contactTitle {
+        > h1 {
+            font-size: 40px;
+        }
+    }
+
+    h2 {
+        margin-top: 0;
+    }
+
+    .contactInput,
+    .inputWrapper {
+        width: 280px;
     }
 }

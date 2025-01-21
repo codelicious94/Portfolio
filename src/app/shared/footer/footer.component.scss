@@ -1,16 +1,26 @@
 footer {
-    position: relative;
+    position: absolute;
+    left: 0;
     color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 37px 100px;
     z-index: 10;
     background-color: #141D2F;
     border-top: solid 4px;
     border-color: #70E61C;
-    >div {
-        font-size: 16px;
+    width: 100%; 
+    display: flex;
+    justify-content: center; 
+
+    .footerContent {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 37px 100px;
+        max-width: 2000px;
+        width: 100%;
+        
+        > div {
+            font-size: 16px;
+        }
     }
 }
 
@@ -44,12 +54,12 @@ a:hover .footerBar {
     height: 30px;
     transform-origin: top left;
     &:hover {
-      transform: scale(1.2);
+        transform: scale(1.2);
     }
 }
 
 @media screen and (max-width: 800px) {
-    footer {
+    .footerContent {
         flex-direction: column;
         justify-content: center;
         align-items: center;

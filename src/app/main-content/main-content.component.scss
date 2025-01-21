@@ -1,0 +1,34 @@
+.aboutMeBackground {
+    position: absolute;
+    top: 1200px;
+    right: 0;
+    z-index: 0;
+}
+
+.mySkillsBackground {
+    position: absolute;
+    top: 2000px;
+    left: 0;
+    z-index: 0;
+}
+
+.portfolioBackground {
+    position: absolute;
+    top: 4500px;
+    left: -280px;
+    z-index: 0;
+    filter: blur(120px);
+}
+
+
+@media screen and (max-width: 1500px) {
+    .mySkillsBackground {
+        top: 2500px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .mySkillsBackground {
+        top: 2600px;
+    }
+}

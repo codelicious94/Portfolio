@@ -4,6 +4,7 @@
     align-items: center;
     padding-left: 100px;
     padding-top: 200px;
+    overflow: hidden;
 }
 
 .framesContainer {
@@ -13,6 +14,8 @@
     align-items: center;   
     justify-content: center;
     gap: 88px;
+    z-index: 2;
+    margin-bottom: 64px;
 }
 
 .frame {
@@ -128,6 +131,7 @@
     flex-direction: column;
     gap: 24px;
     margin-right: 100px;
+    z-index: 2;
     > h2 {
         font-size: 32px;
     }
@@ -155,28 +159,11 @@
     }
 }
 
-.mySkillsBackground {
-    position: absolute;
-    top: 1980px;
-    left: 0;
-    z-index: -2;
-}
-
 .mySkillsTitleResponsive, .mySkillsTitleContentResponsive {
     display: none;
 }
 
-@media screen and (max-width: 1350px) {
-    .mySkillsBackground {
-        top: 2400px;
-    }
-}
-
 @media screen and (max-width: 1212px) {
-    .mySkillsBackground {
-        top: 2500px;
-    }
-
     .framesContainer {
         height: 404px;
         gap: 44px;
@@ -220,7 +207,6 @@
         position: relative;
         display: flex;
         flex-direction: column;
-        overflow: hidden;
         color: white;
         width: 100%;
     }
@@ -267,10 +253,6 @@
 }
 
 @media screen and (max-width: 660px) {
-    .mySkillsBackground {
-        top: 2300px;
-    }
-
     .mySkillsTitleResponsive {
         > h1{
             font-size: 64px;
@@ -279,6 +261,7 @@
 
     .framesContainer {
         gap: 12px;
+        height: 100%;
     }
 }
 
@@ -291,6 +274,20 @@
     .mySkillsTitleResponsive {
         > h1{
             font-size: 48px;
+            padding-right: 12px;
+        }
+    }
+
+    .mySkillsBar {
+        width: 50px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .mySkillsTitleResponsive {
+        margin-top: 180px;
+        > h1{
+            font-size: 32px;
         }
     }
 }
