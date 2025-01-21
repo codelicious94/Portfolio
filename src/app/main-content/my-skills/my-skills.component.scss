@@ -1,10 +1,10 @@
 .mySkillsSection {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding-left: 100px;
-    padding-top: 200px;
     overflow: hidden;
+    padding-top: 100px;
 }
 
 .framesContainer {
@@ -280,6 +280,10 @@
 
     .mySkillsBar {
         width: 50px;
+    }
+
+    .mySkillsSection {
+        padding-top: 0;
     }
 }
 

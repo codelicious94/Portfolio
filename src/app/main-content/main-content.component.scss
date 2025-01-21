@@ -32,3 +32,9 @@
         top: 2600px;
     }
 }
+
+@media screen and (max-width: 1200px) {
+    .portfolioBackground {
+        display: none;
+    }
+}

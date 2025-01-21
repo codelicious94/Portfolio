@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 180px;
+    padding: 180px 0;
     height: auto;
     overflow: hidden;
 }
@@ -95,7 +95,7 @@
 
 @media screen and (max-width: 500px) {
     .aboutMeSection {
-        margin-top: 240px;
+        margin-top: 120px;
     }
 }
 
@@ -107,7 +107,7 @@
     }
 
     .aboutMeSection {
-        margin-top: 340px;
+        padding-bottom: 320px;
     }
 }
 
@@ -116,6 +116,7 @@
         > h1 {
             font-size: 40px;
             margin-bottom: 0;
+            margin-top: 100px;
         }
     }
 }
