@@ -4,8 +4,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    overflow-x: hidden;
-    margin-top: 400px;
+    margin-top: 120px;
     > p {
         color: white;
     }
@@ -104,7 +103,7 @@
 .portfolioBackground {
     position: absolute;
     top: 1200px;
-    left: -220px;
+    left: -180px;
     z-index: 0;
     filter: blur(86px);
 }

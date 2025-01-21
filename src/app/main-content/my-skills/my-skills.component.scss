@@ -3,11 +3,11 @@
     justify-content: center;
     align-items: center;
     padding-left: 100px;
+    padding-top: 200px;
 }
 
 .framesContainer {
     width: 700px;
-    height: 404px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;   
@@ -158,8 +158,8 @@
 .mySkillsBackground {
     position: absolute;
     top: 1980px;
-    left: -40px;
-    z-index: -1;
+    left: 0;
+    z-index: -2;
 }
 
 .mySkillsTitleResponsive, .mySkillsTitleContentResponsive {
@@ -172,13 +172,18 @@
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1212px) {
     .mySkillsBackground {
         top: 2500px;
     }
+
+    .framesContainer {
+        height: 404px;
+        gap: 44px;
+    }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1112px) {
     .mySkillsSection {
         justify-content: center;
         padding-left: 0;
@@ -188,9 +193,8 @@
     }
 
     .framesContainer {
-        height: auto;
-        width: auto;
         margin: 64px;
+        width: auto;
         justify-content: center;
     }
 
@@ -206,7 +210,6 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        margin: 0;
     }
 
     .mySkillsTitle, .mySkillsTitleContent {
@@ -241,6 +244,7 @@
         display: flex;
         justify-content: flex-end;
         margin-right: 100px;
+        margin-left: 100px;
     }
 }    
 
@@ -271,6 +275,10 @@
         > h1{
             font-size: 64px;
         }
+    }
+
+    .framesContainer {
+        gap: 12px;
     }
 }
 

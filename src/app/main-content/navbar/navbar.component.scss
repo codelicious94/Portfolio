@@ -45,13 +45,16 @@ ul {
   justify-content: center;
   list-style-type: none;
   gap: 29px;
+  margin-bottom: 0;
   > li {
     font-size: 24px;
   }
 }
 
 .portfolioLogo {
-  margin: 37px 100px;
+  margin-top: 37px;
+  margin-bottom: 37px;
+  margin-left: 100px;
 }
 
 a {
@@ -106,6 +109,13 @@ li > a:hover + .navMenuBar {
   display: none;
 }
 
+@media screen and (max-width: 1200px) {
+  .languageContainer {
+    margin: 0 50px;
+  }
+}
+
+
 @media screen and (max-width: 1000px) {
   .burgerMenu {
     display: block;
@@ -129,6 +139,7 @@ li > a:hover + .navMenuBar {
 
   .menuContainer.menu-open {
     display: flex;
+    text-align: center;
   }
 
   ul {
