@@ -6,6 +6,10 @@ section {
 
 h1 {
     font-size: 90px;
+    width: 100%; 
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+    white-space: normal;
 }
 
 h2 {
@@ -63,6 +67,17 @@ a {
     scale: 1.1;
 }
 
+@media screen and (max-width: 800px) {
+    .languageContainer {
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .arrowLeft {
+      top: 100px;
+    }
+  }
+
 @media screen and (max-width: 600px) {
     section {
         margin: 64px;
@@ -70,6 +85,7 @@ a {
 
     .arrowLeft {
         right: 64px;
+        top: 64px;
     }
 }
 
@@ -83,8 +99,6 @@ a {
     }
 
     .arrowLeft {
-        top: 48px;
         right: 32px;
-        width: 24px;
     }
 }

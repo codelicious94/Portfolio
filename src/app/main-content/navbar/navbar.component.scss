@@ -156,12 +156,8 @@ li > a:hover + .navMenuBar {
   }
 
   .languageContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 16px;
   }
 
   .closeMenu {
