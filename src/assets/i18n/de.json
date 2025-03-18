@@ -34,7 +34,7 @@
       "projects": {
         "join": {
           "name": "Join",
-          "tech": "Angular | Typescript | HTML | CSS | Firebase",
+          "tech": "Angular | TypeScript | HTML | CSS | Firebase",
           "description": "Task Manager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
           "cta": {
             "liveTest": "Live-Demo",
@@ -43,7 +43,7 @@
         },
         "elPolloLoco": {
           "name": "El Pollo Loco",
-          "tech": "Javascript | HTML | CSS",
+          "tech": "JavaScript | HTML | CSS",
           "description": "Ein einfaches Jump-and-Run-Spiel basierend auf einem objektorientierten Ansatz. Helfen Sie Pepe, Münzen und Salsa-Flaschen zu finden, um gegen die hungrigen Hühner zu kämpfen.",
           "cta": {
             "liveTest": "Live-Demo",
@@ -52,7 +52,7 @@
         },
         "pokedex": {
           "name": "Pokedex",
-          "tech": "Javascript | HTML | CSS | API",
+          "tech": "JavaScript | HTML | CSS | API",
           "description": "Basierend auf der PokéAPI, eine einfache Bibliothek, die Pokemon-Informationen bereitstellt und katalogisiert.",
           "cta": {
             "liveTest": "Live-Demo",
@@ -61,7 +61,7 @@
         },
         "simonWorldTour": {
           "name": "Simons Weltreise",
-          "tech": "Javascript | HTML | CSS",
+          "tech": "JavaScript | HTML | CSS",
           "description": "Eine einfache Fotogalerie von meiner eigenen Weltreise von 2023 bis 2024.",
           "cta": {
             "liveTest": "Live-Demo",
